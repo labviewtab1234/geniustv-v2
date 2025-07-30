@@ -5,13 +5,15 @@ import { InfrastructureSection } from "@/components/InfrastructureSection";
 import { PricingSection } from "@/components/PricingSection";
 import { PaymentMethodsSection } from "@/components/PaymentMethodsSection";
 import { Footer } from "@/components/Footer";
+import { LogoCarousel } from "@/components/LogosCarousel";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Header />
       <main>
         <HeroSection />
+         <LogoCarousel />
         <TestimonialsSection />
         <InfrastructureSection />
         <PricingSection />

@@ -16,7 +16,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center bg-hero-gradient overflow-hidden">
+    <section className="relative min-h-[100vh] flex items-center justify-center bg-hero-gradient overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
@@ -94,9 +94,14 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-
             {/* Floating Social Media Buttons */}
+                  {/* Section Logos en bas */}
+      {/* <div className="absolute left-0 right-0 bottom-0 w-full h- flex
+       items-center bg-background/80 z-20 overflow-x-hidden sm:h-32 h-20">
+        <LogoCarousel />
+      </div> */}
       <FloatingSocialButtons />
     </section>
+    
   );
 };
