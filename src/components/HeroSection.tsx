@@ -51,7 +51,12 @@ export const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold shadow-tech-glow hover:shadow-lg transition-all duration-300 hover:scale-105"
-              onClick={() => navigate('/contact')}
+              onClick={() => {
+                const pricingSection = document.getElementById('pricing-section');
+                if (pricingSection) {
+                  pricingSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               <Play className="w-5 h-5 mr-2" />
               {t('hero.startFrom')}
@@ -61,7 +66,7 @@ export const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105"
-              onClick={openWhatsApp}
+              onClick={() => navigate('/contact')}
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               {t('hero.whatsapp')}
