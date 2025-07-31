@@ -16,9 +16,16 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-[100vh] flex items-center justify-center bg-hero-gradient overflow-hidden">
+    <section className="relative w-100 min-h-[100vh] flex items-center 
+         justify-center bg-hero-gradient overflow-hidden"
+          style={{
+        backgroundImage: `url('/background.png'), var(--hero-gradient)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}>
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.15) 1px, transparent 0)`
@@ -32,7 +39,7 @@ export const HeroSection = () => {
         <div className="absolute top-1/2 right-1/3 w-32 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent animate-pulse delay-500"></div>
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10" style={{ marginTop: '100px' }}>
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
