@@ -1,33 +1,20 @@
 
 
 const logos = [
-    "/GeniusTV Logos/amazon-prime-video-seeklogo.png",
-    "/GeniusTV Logos/apple-tv-seeklogo.png",
-    "/GeniusTV Logos/bbc-news-seeklogo.png",
-    "/GeniusTV Logos/bundesliga-seeklogo.png",
-    "/GeniusTV Logos/cnn-seeklogo.png",
-    "/GeniusTV Logos/curiosity-stream-seeklogo.png",
-    "/GeniusTV Logos/discovery-channel-seeklogo.png",
-    "/GeniusTV Logos/disney-channel-seeklogo.png",
-    "/GeniusTV Logos/formula-1-seeklogo.png",
-    "/GeniusTV Logos/fubotv-seeklogo.png",
-    "/GeniusTV Logos/hbo-seeklogo.png",
-    "/GeniusTV Logos/hulu-seeklogo.png",
-    "/GeniusTV Logos/laliga-seeklogo.png",
-    "/GeniusTV Logos/major-league-baseball-seeklogo.png",
-    "/GeniusTV Logos/national-geographic-seeklogo.png",
-    "/GeniusTV Logos/nba-seeklogo.png",
-    "/GeniusTV Logos/netflix-seeklogo.png",
-    "/GeniusTV Logos/new-premier-league-2016-17-seeklogo.png",
-    "/GeniusTV Logos/paramount-seeklogo.png",
-    "/GeniusTV Logos/sky-sports-seeklogo.png",
-    "/GeniusTV Logos/nfl-seeklogo.png",
-    "/GeniusTV Logos/uefa-champions-league-seeklogo.png",
-    "/GeniusTV Logos/ufc-seeklogo.png",
+    "/Posters/Group 3.png",
+    "/Posters/Group 4.png",
+    "/Posters/Group 5.png",
+    "/Posters/Group 6.png",
+    "/Posters/Group 7.png",
+    "/Posters/Group 8.png",
+    "/Posters/Group 9.png",
+    "/Posters/Group 10.png",
+    "/Posters/Group 11.png",
+    "/Posters/Group 12.png",
 ];
 import { useState, useRef, useEffect } from "react";
 
-export const LogoCarousel = () => {
+export const PostersCarousel = () => {
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
@@ -75,12 +62,13 @@ export const LogoCarousel = () => {
             >
                 {/* Triple les logos pour un défilement infini vraiment fluide */}
                 {[...logos, ...logos, ...logos].map((logo, idx) => (
-                    <div key={idx} className="flex items-center justify-center px-4 sm:px-4 md:px-6 lg:px-8 flex-shrink-0">
+                    <div key={idx} className="flex items-center justify-center px-4 sm:px-2 md:px-2 lg:px-1 flex-shrink-0">
                         <img
                             src={logo}
                             alt={`Logo ${idx + 1}`}
                             className="h-8 sm:h-12 md:h-12 lg:h-14 xl:h-16 w-auto object-contain max-w-none pointer-events-none"
                             draggable={false}
+                              style={{ height: 320 , width: 210, objectFit: "cover" }}
                         />
                     </div>
                 ))}
@@ -89,24 +77,5 @@ export const LogoCarousel = () => {
     );
 };
 
-
-// export const LogoCarousel = () => {
-//     return (
-//         <div className="w-full h-full overflow-hidden flex items-center bg-background/80 py-4 md:py-8 lg:py-12">
-//             <div className="flex animate-logos-marquee" style={{ minWidth: "200%" }}>
-//                 {[...logos, ...logos].map((logo, idx) => (
-//                     <div key={idx} className="flex items-center justify-center px-6 sm:px-4 md:px-6 lg:px-8 flex-shrink-0">
-//                         <img
-//                             src={logo}
-//                             alt={`Logo ${idx + 1}`}
-//                             className="h-12 sm:h-16 md:h-12 lg:h-14 xl:h-16 w-auto object-contain max-w-none"
-//                             draggable={false}
-//                         />
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// };
 
 
