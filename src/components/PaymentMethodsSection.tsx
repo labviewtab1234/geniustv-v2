@@ -6,24 +6,30 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const paymentMethods = [
   {
     name: "Eneba",
+    logo: "/payement logos/eneba.png",
     icon: CreditCard,
     description: "Credit & Debit Cards",
     recommended: true,
-    features: ["Instant payment", "Global acceptance", "Secure checkout"]
+    features: ["Instant payment", "Global acceptance", "Secure checkout"],
+    dimension: "w-16 h-16"
   },
   {
     name: "Wise",
+    logo: "/payement logos/wise.png",
     icon: Banknote,
     description: "Bank Transfer",
     recommended: false,
-    features: ["Low fees", "Multi-currency", "Fast transfer"]
+    features: ["Low fees", "Multi-currency", "Fast transfer"],
+    dimension: "w-16 h-16"
   },
   {
     name: "Crypto",
+    logo: "/payement logos/crypto.png",
     icon: Bitcoin,
     description: "Cryptocurrency",
     recommended: false,
-    features: ["Bitcoin", "Ethereum", "Anonymous"]
+    features: ["Bitcoin", "Ethereum", "Anonymous"],
+    dimension: "w-16 h-16"
   }
 ];
 
@@ -34,7 +40,7 @@ const paymentSteps = [
     description: "Choose your preferred payment method"
   },
   {
-    step: "2", 
+    step: "2",
     title: "Send receipt (WhatsApp / Telegram)",
     description: "Forward payment confirmation to our support"
   },
@@ -66,27 +72,32 @@ export const PaymentMethodsSection = () => {
           {paymentMethods.map((method, index) => {
             const IconComponent = method.icon;
             return (
-              <Card 
+              <Card
                 key={index}
-                className={`bg-card border-border hover:bg-card-hover transition-all duration-300 hover:scale-105 relative ${
-                  method.recommended ? 'border-primary shadow-tech-glow' : ''
-                }`}
+                className={`bg-card border-border hover:bg-card-hover transition-all duration-300 hover:scale-105 relative ${method.recommended ? 'border-primary shadow-tech-glow' : ''
+                  }`}
               >
                 {method.recommended && (
                   <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-secondary text-secondary-foreground">
                     {t('apps.recommended')}
                   </Badge>
                 )}
-                
+
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="w-8 h-8 text-primary" />
+                  <div className={`${method.dimension} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
+                    <img
+                      src={method.logo}
+                      alt={method.name}
+                      className=" object-contain"
+                      width={"100px"}
+                      height={"100px"}
+                    />
                   </div>
-                  
+
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     {method.name}
                   </h3>
-                  
+
                   <p className="text-muted-foreground mb-4">
                     {method.description}
                   </p>
@@ -110,7 +121,7 @@ export const PaymentMethodsSection = () => {
           <h3 className="text-2xl font-bold text-foreground text-center mb-8">
             How It Works
           </h3>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {paymentSteps.map((step, index) => (
               <div key={index} className="text-center relative">
@@ -119,11 +130,11 @@ export const PaymentMethodsSection = () => {
                     {step.step}
                   </span>
                 </div>
-                
+
                 <h4 className="text-lg font-semibold text-foreground mb-2">
                   {step.title}
                 </h4>
-                
+
                 <p className="text-muted-foreground text-sm">
                   {step.description}
                 </p>

@@ -14,7 +14,7 @@ const footerLinks = {
     { label: "Contact", href: "/contact" },
     { label: "WhatsApp", href: "#" },
     { label: "Telegram", href: "#" },
-    { label: "Email Support", href: "mailto:support@geniustv.com" }
+    // { label: "Email Support", href: "mailto:support@geniustv.com" }
   ],
   company: [
     { label: "About Us", href: "/about" },
