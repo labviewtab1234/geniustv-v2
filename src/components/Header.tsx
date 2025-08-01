@@ -22,8 +22,8 @@ const getNavigationItems = (t: (key: string) => string) => [
   { href: '/', label: t('nav.home') },
   { href: '/apps', label: t('nav.apps') },
   { href: '/blog', label: t('nav.blog') },
-  { href: '/faq', label: t('nav.faq') },
   { href: '/reseller', label: t('nav.reseller') },
+  { href: '/faq', label: t('nav.faq') },
   { href: '/contact', label: t('nav.contact') },
 ];
 
@@ -87,9 +87,9 @@ export const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button className="bg-primary hover:bg-primary/90">
+            {/* <Button className="bg-primary hover:bg-primary/90">
               {t('header.startNow')}
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}

@@ -5,12 +5,65 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageCircle, Phone, Mail, Clock } from "lucide-react";
+import { MessageCircle, Phone, Mail, Clock, Send } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FloatingSocialButtons } from "@/components/FloatingSocialButtons";
+import { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const { t } = useLanguage();
+  const openWhatsApp = () => {
+    const phoneNumber = "+33644657615"; // Format international sans espaces
+    const message = "Hello, I would like to receive more information about your services..";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const openTelegram = () => {
+    const telegramUsername = "genuistv";
+    const message = "Hello, I would like to receive more information about your services..";
+    const telegramUrl = `https://t.me/${telegramUsername}?text=${encodeURIComponent(message)}`;
+    window.open(telegramUrl, '_blank');
+  };
+
+  // Ajoute l'état pour les champs du formulaire
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  };
+
+  const handleSend = async (e) => {
+    e.preventDefault();
+    setSending(true);
+    try {
+      await emailjs.send(
+        "service_2ih4eqc", // à remplacer par ton service ID EmailJS
+        "template_xlrjhvo", // à remplacer par ton template ID EmailJS
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        "RPumTLOK8bWer3Lp3" // à remplacer par ton user ID EmailJS (public key)
+      );
+      setSent(true);
+      setForm({ name: "", email: "", message: "" });
+      setTimeout(() => setSent(false), 3000); 
+    } catch (err) {
+      alert("Erreur lors de l'envoi du message.");
+    }
+    setSending(false);
+  };
+
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -25,30 +78,39 @@ const Contact = () => {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card>
+            <Card className="form-card">
               <CardHeader>
                 <CardTitle>{t('contact.sendMessage')}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">{t('contact.name')}</Label>
-                  <Input id="name" placeholder={t('contact.namePlaceholder')} />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">{t('contact.email')}</Label>
-                  <Input id="email" type="email" placeholder={t('contact.emailPlaceholder')} />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message">{t('contact.message')}</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder={t('contact.messagePlaceholder')}
-                    rows={6}
-                  />
-                </div>
-                <Button className="w-full" size="lg">
-                  {t('contact.send')}
-                </Button>
+                <form onSubmit={handleSend}>
+                  <div className="space-y-2">
+                    <Label htmlFor="name">{t('contact.name')}</Label>
+                    <Input id="name" placeholder={t('contact.namePlaceholder')}
+                    value={form.name} onChange={handleChange} />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">{t('contact.email')}</Label>
+                    <Input id="email" type="email" 
+                     value={form.email} onChange={handleChange}
+                    placeholder={t('contact.emailPlaceholder')} />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="message">{t('contact.message')}</Label>
+                    <Textarea
+                      id="message"
+                      placeholder={t('contact.messagePlaceholder')}
+                      rows={6}
+                                           value={form.message}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <Button className="w-full" size="lg" type="submit" disabled={sending}>
+                    {t('contact.send')}
+                  </Button>
+                      {sent && <p className="text-green-600 mt-2">Message sent successfully!</p>}
+                </form>
+
               </CardContent>
             </Card>
 
@@ -58,28 +120,37 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Clock className="h-5 w-5" />
-                    Instant Support
+                    {t('contact.instantSupport')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    For immediate assistance, use our direct channels:
+                    {t('contact.immediateAssistance')}
                   </p>
-                  
-                  <Button className="w-full justify-start" size="lg">
-                    <MessageCircle className="h-5 w-5 mr-2" />
-                    WhatsApp Support
+
+                  <Button
+                    onClick={openWhatsApp}
+                    size="lg"
+                    className="w-full justify-star bg-secondary hover:bg-secondary/90 text-secondary-foreground h-16 text-lg"
+                  >
+                    <MessageCircle className="w-6 h-6 mr-3" />
+                    {t('footer.whatsapp')}
                   </Button>
-                  
-                  <Button variant="outline" className="w-full justify-start" size="lg">
-                    <Phone className="h-5 w-5 mr-2" />
-                    Telegram Support
+
+                  <Button
+                    onClick={openTelegram}
+                    size="lg"
+                    variant="outline"
+                    className="w-full justify-star border-primary text-primary hover:bg-primary hover:text-primary-foreground h-16 text-lg"
+                  >
+                    <Send className="w-6 h-6 mr-3" />
+                    {t('footer.telegram')}
                   </Button>
-                  
-                  <Button variant="outline" className="w-full justify-start" size="lg">
+
+                  {/* <Button variant="outline" className="w-full justify-start" size="lg">
                     <Mail className="h-5 w-5 mr-2" />
                     Email Support
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
 
@@ -97,12 +168,8 @@ const Contact = () => {
                     <span className="font-semibold text-primary">&lt; 30 minutes</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Email</span>
-                    <span className="font-semibold text-primary">&lt; 2 hours</span>
-                  </div>
-                  <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Contact Form</span>
-                    <span className="font-semibold text-primary">&lt; 4 hours</span>
+                    <span className="font-semibold text-primary">&lt; 3 hours</span>
                   </div>
                 </CardContent>
               </Card>

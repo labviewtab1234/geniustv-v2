@@ -78,7 +78,7 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.telegramSupport': 'Telegram Support',
     
     // Contact Page
-    'contact.title': 'Contact Support',
+    'contact.title': ' Contact an agent now',
     'contact.subtitle': 'Get instant help from our technical team',
     'contact.sendMessage': 'Send us a message',
     'contact.name': 'Name',
@@ -221,7 +221,7 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.telegramSupport': 'Soporte Telegram',
     
     // Contact Page
-    'contact.title': 'Contactar Soporte',
+    'contact.title': 'Contacte con un agente ahora',
     'contact.subtitle': 'Obtén ayuda instantánea de nuestro equipo técnico',
     'contact.sendMessage': 'Envíanos un mensaje',
     'contact.name': 'Nombre',
@@ -335,6 +335,23 @@ const translations: Record<Language, Record<string, string>> = {
     'pricing.mostPopular': 'Plus Populaire',
     'pricing.bestDeal': 'Meilleure Offre',
     'pricing.subscribeNow': 'S\'abonner Maintenant',
+
+        // Contact Page
+    'contact.title': 'Contactez un agent maintenant',
+    'contact.subtitle': 'Obtenez une aide instantanée de notre équipe technique',
+    'contact.sendMessage': 'Envoyez-nous un message',
+    'contact.name': 'Nom',
+    'contact.namePlaceholder': 'Votre nom complet',
+    'contact.email': 'Email',
+    'contact.emailPlaceholder': 'your@email.com',
+    'contact.message': 'Message',
+    'contact.messagePlaceholder': 'Décrivez votre problème ou votre question...',
+    'contact.send': 'Envoyer le message',
+    'contact.instantSupport': 'Support Instantané',
+    'contact.immediateAssistance': 'Pour une assistance immédiate, utilisez nos canaux directs:',
+    'contact.responseTimes': 'Délais de Réponse',
+    'contact.technicalIssues': 'Problèmes Techniques?',
+    'contact.beforeContacting': 'Avant de contacter le support, essayez ces solutions rapides:',
   },
   it: {
     // Header
