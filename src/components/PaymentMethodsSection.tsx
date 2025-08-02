@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const paymentMethods = [
   {
-    name: "Eneba",
+    name: "Card payment",
     logo: "/payement logos/eneba.png",
     icon: CreditCard,
     description: "Credit & Debit Cards",

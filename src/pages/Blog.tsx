@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CalendarDays, Clock, ArrowRight } from "lucide-react";
-import { FloatingSocialButtons } from "@/components/FloatingSocialButtons";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const { t } = useLanguage();
@@ -17,7 +17,8 @@ const Blog = () => {
       date: "January 15, 2025",
       readTime: "5 min read",
       category: "Technology",
-      featured: true
+      featured: true,
+      slug: "iptv-technology-trends-2025"
     },
     {
       title: "Complete Guide: Setting Up IPTV on Smart TVs",
@@ -26,7 +27,8 @@ const Blog = () => {
       date: "January 12, 2025",
       readTime: "8 min read",
       category: "Tutorial",
-      featured: false
+      featured: false,
+      slug: "smart-tv-setup-guide"
     },
     {
       title: "Comparing IPTV vs Cable TV: Cost, Quality & Features",
@@ -35,7 +37,8 @@ const Blog = () => {
       date: "January 10, 2025",
       readTime: "6 min read",
       category: "Comparison",
-      featured: false
+      featured: false,
+      slug: "iptv-vs-cable-comparison"
     },
     {
       title: "How to Optimize Your Internet for IPTV Streaming",
@@ -44,7 +47,8 @@ const Blog = () => {
       date: "January 8, 2025",
       readTime: "7 min read",
       category: "Tutorial",
-      featured: false
+      featured: false,
+      slug: "optimize-internet-for-iptv"
     },
     {
       title: "Legal Considerations for IPTV Services in 2025",
@@ -53,7 +57,8 @@ const Blog = () => {
       date: "January 5, 2025",
       readTime: "10 min read",
       category: "Legal",
-      featured: false
+      featured: false,
+      slug: "legal-considerations-iptv-2025"
     },
     {
       title: "Best IPTV Apps for Android and iOS Devices",
@@ -62,7 +67,8 @@ const Blog = () => {
       date: "January 3, 2025",
       readTime: "9 min read",
       category: "Apps",
-      featured: false
+      featured: false,
+      slug: "best-iptv-apps-mobile"
     }
   ];
 
@@ -130,10 +136,12 @@ const Blog = () => {
                       {blogPosts.find(post => post.featured)?.readTime}
                     </div>
                   </div>
-                  <Button className="w-fit">
-                    Read More
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Button>
+                  <Link to={`/blog/${blogPosts.find(post => post.featured)?.slug}`}>
+                    <Button className="w-fit">
+                      Read More
+                      <ArrowRight className="h-4 w-4 ml-2" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Card>
@@ -169,10 +177,12 @@ const Blog = () => {
                       <CalendarDays className="h-3 w-3" />
                       {post.date}
                     </div>
-                    <Button variant="ghost" size="sm">
-                      Read More
-                      <ArrowRight className="h-3 w-3 ml-1" />
-                    </Button>
+                    <Link to={`/blog/${post.slug}`}>
+                      <Button variant="ghost" size="sm">
+                        Read More
+                        <ArrowRight className="h-3 w-3 ml-1" />
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
@@ -187,7 +197,6 @@ const Blog = () => {
           </div>
         </div>
       </main>
-      <FloatingSocialButtons />
       <Footer />
     </div>
   );

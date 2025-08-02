@@ -11,6 +11,8 @@ import Reseller from "./pages/Reseller";
 import Blog from "./pages/Blog";
 import Apps from "./pages/Apps";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/reseller" element={<Reseller />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/apps" element={<Apps />} />
+          <Route path="/about" element={<About />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
