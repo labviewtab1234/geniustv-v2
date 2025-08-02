@@ -11,6 +11,8 @@ const logos = [
     "/Posters/Group 10.png",
     "/Posters/Group 11.png",
     "/Posters/Group 12.png",
+    "/Posters/Group 13.png",
+    "/Posters/Group 14.png",
 ];
 import { useState, useRef, useEffect } from "react";
 
@@ -68,7 +70,7 @@ export const PostersCarousel = () => {
                             alt={`Logo ${idx + 1}`}
                             className="h-8 sm:h-12 md:h-12 lg:h-14 xl:h-16 w-auto object-contain max-w-none pointer-events-none"
                             draggable={false}
-                              style={{ height: 400 , width: 280, objectFit: "cover" }}
+                            style={{ height: 600 , width: 350, objectFit: "cover" }}
                         />
                     </div>
                 ))}

@@ -23,9 +23,11 @@ const logos = [
     "/GeniusTV Logos/sky-sports-seeklogo.png",
     "/GeniusTV Logos/nfl-seeklogo.png",
     "/GeniusTV Logos/uefa-champions-league-seeklogo.png",
+    "/GeniusTV Logos/bein-sports-seeklogo.png",
     "/GeniusTV Logos/ufc-seeklogo.png",
+     "/GeniusTV Logos/dazn-seeklogo.png",
 ];
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 export const LogoCarousel = () => {
     const [isDragging, setIsDragging] = useState(false);
@@ -60,10 +62,10 @@ export const LogoCarousel = () => {
 
     return (
         <div className="w-full h-full overflow-hidden flex items-center bg-background/80 py-4 md:py-8 lg:py-12">
-            <div 
+            <div
                 ref={containerRef}
                 className="flex animate-logos-marquee overflow-x-auto scrollbar-hide cursor-grab select-none"
-                style={{ 
+                style={{
                     minWidth: "200%",
                     scrollbarWidth: "none",
                     msOverflowStyle: "none"
@@ -88,25 +90,4 @@ export const LogoCarousel = () => {
         </div>
     );
 };
-
-
-// export const LogoCarousel = () => {
-//     return (
-//         <div className="w-full h-full overflow-hidden flex items-center bg-background/80 py-4 md:py-8 lg:py-12">
-//             <div className="flex animate-logos-marquee" style={{ minWidth: "200%" }}>
-//                 {[...logos, ...logos].map((logo, idx) => (
-//                     <div key={idx} className="flex items-center justify-center px-6 sm:px-4 md:px-6 lg:px-8 flex-shrink-0">
-//                         <img
-//                             src={logo}
-//                             alt={`Logo ${idx + 1}`}
-//                             className="h-12 sm:h-16 md:h-12 lg:h-14 xl:h-16 w-auto object-contain max-w-none"
-//                             draggable={false}
-//                         />
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// };
-
 

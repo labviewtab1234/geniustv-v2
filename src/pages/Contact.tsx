@@ -95,7 +95,7 @@ const Contact = () => {
                      value={form.email} onChange={handleChange}
                     placeholder={t('contact.emailPlaceholder')} />
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2 mb-4">
                     <Label htmlFor="message">{t('contact.message')}</Label>
                     <Textarea
                       id="message"

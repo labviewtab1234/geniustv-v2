@@ -31,7 +31,7 @@ const infrastructureFeatures = [
 
 const metrics = [
   { value: "99.9%", label: "Uptime" },
-  { value: "20K+", label: "Channels" },
+  { value: "35K+", label: "Channels" },
   { value: "4K", label: "Quality" },
   { value: "24/7", label: "Support" }
 ];

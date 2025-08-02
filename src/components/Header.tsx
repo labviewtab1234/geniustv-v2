@@ -41,10 +41,12 @@ export const Header = () => {
           <div className="flex items-center">
             <a href="/" className="flex items-center space-x-2">
               {/* Placeholder for logo - will be replaced when logo is provided */}
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">G</span>
               </div>
-              <span className="text-xl font-bold text-foreground">GeniusTV</span>
+              <span className="text-xl font-bold text-foreground">GeniusTV</span> */}
+              <img src="/logo.png" alt="GeniusTV Logo"
+              width={180} height={140} />
             </a>
           </div>
 
@@ -68,7 +70,7 @@ export const Header = () => {
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="h-8">
                   <Globe className="w-4 h-4 mr-2" />
-                  <span className="mr-1">{currentLanguage.flag}</span>
+                  {/* <span className="mr-1">{currentLanguage.flag}</span> */}
                   <span className="text-sm">{currentLanguage.code.toUpperCase()}</span>
                   <ChevronDown className="w-3 h-3 ml-1" />
                 </Button>

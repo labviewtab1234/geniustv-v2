@@ -1,7 +1,5 @@
-import { MessageCircle, Send, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-
+import { openWhatsApp, openTelegram } from "@/services/socialService";
 const footerLinks = {
   product: [
     { label: "Apps", href: "/apps" },
@@ -12,8 +10,8 @@ const footerLinks = {
   ],
   support: [
     { label: "Contact", href: "/contact" },
-    { label: "WhatsApp", href: "#" },
-    { label: "Telegram", href: "#" },
+    { label: "WhatsApp", href: openWhatsApp },
+    { label: "Telegram", href: openTelegram },
     // { label: "Email Support", href: "mailto:support@geniustv.com" }
   ],
   company: [
@@ -95,6 +93,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-foreground font-semibold mb-4">Product</h3>
             <ul className="space-y-2">
+
               {footerLinks.product.map((link, index) => (
                 <li key={index}>
                   <a 
@@ -112,16 +111,30 @@ export const Footer = () => {
           <div>
             <h3 className="text-foreground font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
-              {footerLinks.support.map((link, index) => (
-                <li key={index}>
+                <li>
                   <a 
-                    href={link.href}
+                    href={'/contact'}
                     className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                   >
-                    {link.label}
+                   Contact
                   </a>
                 </li>
-              ))}
+                <li>
+                  <a 
+                    onClick={openWhatsApp}
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer"
+                  >
+                 WhatsApp
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    onClick={openTelegram}
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm cursor-pointer"
+                  >
+                   Telegram
+                  </a>
+                </li>
             </ul>
           </div>
 
