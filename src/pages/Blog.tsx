@@ -11,8 +11,8 @@ const Blog = () => {
   const { t } = useLanguage();
   const blogPosts = [
     {
-      title: "IPTV Technology Trends in 2025: What to Expect",
-      excerpt: "Explore the latest developments in IPTV technology, including 8K streaming, AI-powered recommendations, and enhanced user experiences.",
+      title: "Best IPTV Service 2025: Your Ultimate Guide to Uninterrupted 4K Streaming & Live TV Without Cable",
+      excerpt: "Tired of Sky-High Cable Bills? Welcome to the Future of TV!",
       image: "/placeholder.svg",
       date: "January 15, 2025",
       readTime: "5 min read",
@@ -95,7 +95,7 @@ const Blog = () => {
           </div>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap gap-2 justify-center mb-12">
+          {/* <div className="flex flex-wrap gap-2 justify-center mb-12">
             {categories.map((category) => (
               <Button
                 key={category}
@@ -105,10 +105,10 @@ const Blog = () => {
                 {category}
               </Button>
             ))}
-          </div>
+          </div> */}
 
           {/* Featured Post */}
-          {blogPosts.find(post => post.featured) && (
+          {/* {blogPosts.find(post => post.featured) && (
             <Card className="mb-12 border-primary/20">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="aspect-video lg:aspect-auto">
@@ -145,11 +145,11 @@ const Blog = () => {
                 </div>
               </div>
             </Card>
-          )}
+          )} */}
 
           {/* Blog Posts Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.filter(post => !post.featured).map((post, index) => (
+            {blogPosts.map((post, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="aspect-video">
                   <img 
