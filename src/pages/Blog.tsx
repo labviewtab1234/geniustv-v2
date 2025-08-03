@@ -18,58 +18,58 @@ const Blog = () => {
       readTime: "5 min read",
       category: "Technology",
       featured: true,
-      slug: "iptv-technology-trends-2025"
+      slug: "best-iptv-service-2025"
     },
-    {
-      title: "Complete Guide: Setting Up IPTV on Smart TVs",
-      excerpt: "Step-by-step instructions for configuring IPTV services on all major Smart TV brands including Samsung, LG, Sony, and more.",
-      image: "/placeholder.svg",
-      date: "January 12, 2025",
-      readTime: "8 min read",
-      category: "Tutorial",
-      featured: false,
-      slug: "smart-tv-setup-guide"
-    },
-    {
-      title: "Comparing IPTV vs Cable TV: Cost, Quality & Features",
-      excerpt: "An in-depth comparison of IPTV services versus traditional cable television, covering pricing, channel selection, and streaming quality.",
-      image: "/placeholder.svg",
-      date: "January 10, 2025",
-      readTime: "6 min read",
-      category: "Comparison",
-      featured: false,
-      slug: "iptv-vs-cable-comparison"
-    },
-    {
-      title: "How to Optimize Your Internet for IPTV Streaming",
-      excerpt: "Learn essential tips and tricks to ensure smooth, buffer-free IPTV streaming with optimal internet settings and configurations.",
-      image: "/placeholder.svg",
-      date: "January 8, 2025",
-      readTime: "7 min read",
-      category: "Tutorial",
-      featured: false,
-      slug: "optimize-internet-for-iptv"
-    },
-    {
-      title: "Legal Considerations for IPTV Services in 2025",
-      excerpt: "Understanding the legal landscape of IPTV services, licensing requirements, and how to choose legitimate providers.",
-      image: "/placeholder.svg",
-      date: "January 5, 2025",
-      readTime: "10 min read",
-      category: "Legal",
-      featured: false,
-      slug: "legal-considerations-iptv-2025"
-    },
-    {
-      title: "Best IPTV Apps for Android and iOS Devices",
-      excerpt: "Comprehensive review of the top IPTV applications for mobile devices, comparing features, usability, and performance.",
-      image: "/placeholder.svg",
-      date: "January 3, 2025",
-      readTime: "9 min read",
-      category: "Apps",
-      featured: false,
-      slug: "best-iptv-apps-mobile"
-    }
+    // {
+    //   title: "Complete Guide: Setting Up IPTV on Smart TVs",
+    //   excerpt: "Step-by-step instructions for configuring IPTV services on all major Smart TV brands including Samsung, LG, Sony, and more.",
+    //   image: "/placeholder.svg",
+    //   date: "January 12, 2025",
+    //   readTime: "8 min read",
+    //   category: "Tutorial",
+    //   featured: false,
+    //   slug: "smart-tv-setup-guide"
+    // },
+    // {
+    //   title: "Comparing IPTV vs Cable TV: Cost, Quality & Features",
+    //   excerpt: "An in-depth comparison of IPTV services versus traditional cable television, covering pricing, channel selection, and streaming quality.",
+    //   image: "/placeholder.svg",
+    //   date: "January 10, 2025",
+    //   readTime: "6 min read",
+    //   category: "Comparison",
+    //   featured: false,
+    //   slug: "iptv-vs-cable-comparison"
+    // },
+    // {
+    //   title: "How to Optimize Your Internet for IPTV Streaming",
+    //   excerpt: "Learn essential tips and tricks to ensure smooth, buffer-free IPTV streaming with optimal internet settings and configurations.",
+    //   image: "/placeholder.svg",
+    //   date: "January 8, 2025",
+    //   readTime: "7 min read",
+    //   category: "Tutorial",
+    //   featured: false,
+    //   slug: "optimize-internet-for-iptv"
+    // },
+    // {
+    //   title: "Legal Considerations for IPTV Services in 2025",
+    //   excerpt: "Understanding the legal landscape of IPTV services, licensing requirements, and how to choose legitimate providers.",
+    //   image: "/placeholder.svg",
+    //   date: "January 5, 2025",
+    //   readTime: "10 min read",
+    //   category: "Legal",
+    //   featured: false,
+    //   slug: "legal-considerations-iptv-2025"
+    // },
+    // {
+    //   title: "Best IPTV Apps for Android and iOS Devices",
+    //   excerpt: "Comprehensive review of the top IPTV applications for mobile devices, comparing features, usability, and performance.",
+    //   image: "/placeholder.svg",
+    //   date: "January 3, 2025",
+    //   readTime: "9 min read",
+    //   category: "Apps",
+    //   featured: false,
+    //   slug: "best-iptv-apps-mobile"
+    // }
   ];
 
   const categories = ["All", "Technology", "Tutorial", "Comparison", "Legal", "Apps"];
@@ -190,11 +190,11 @@ const Blog = () => {
           </div>
 
           {/* Load More */}
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Button variant="outline" size="lg">
               Load More Articles
             </Button>
-          </div>
+          </div> */}
         </div>
       </main>
       <Footer />
