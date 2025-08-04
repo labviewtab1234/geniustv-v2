@@ -20,16 +20,24 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.reseller': 'Reseller',
     'nav.contact': 'Contact',
     'header.startNow': 'Start Now',
-    
+
     // Hero Section
     'hero.title': 'Stable, fast, and uninterrupted streaming.',
     'hero.subtitle': 'Thousands of live channels and on-demand content. Works on Smart TV, PC, and mobile. Get access in minutes.',
     'hero.startFrom': 'Start now from $15',
     'hero.whatsapp': 'Talk to an agent now',
-    
+
     // Testimonials
     'testimonials.title': "Don't Trust Our Word. Trust Our Customers.",
-    
+    'testimonials.subtitle': 'Real feedback from real customers using GeniusTV every day',
+    'testimonials.whatsapp': 'WhatsApp',
+    'testimonials.read': 'Read',
+    'testimonials.testimonial1': "Been using GeniusTV for 6 months, never had buffering issues! Perfect quality 👍",
+    'testimonials.testimonial2': "Quick setup, great support team. Working perfectly on my Samsung TV 📺",
+    'testimonials.testimonial3': "Finally found reliable IPTV! All channels work, no interruptions ⭐",
+    'testimonials.testimonial4': "Support helped me set it up in 5 minutes. Amazing service! 🔥",
+    'testimonials.testimonial5': "Best IPTV service I've tried. 4K quality is incredible 🎬",
+
     // Infrastructure
     'infrastructure.title': 'The Goliath Infrastructure',
     'infrastructure.servers': 'Global Servers',
@@ -40,7 +48,7 @@ const translations: Record<Language, Record<string, string>> = {
     'infrastructure.channels': 'Channels',
     'infrastructure.quality': 'Quality',
     'infrastructure.support': 'Support',
-    
+
     // Pricing
     'pricing.month1': '1 Month',
     'pricing.months3': '3 Months',
@@ -49,14 +57,78 @@ const translations: Record<Language, Record<string, string>> = {
     'pricing.mostPopular': 'Most Popular',
     'pricing.bestDeal': 'Best Deal',
     'pricing.subscribeNow': 'Subscribe Now',
-    
+
     // Payment Methods
     'payment.title': '100% Secure & Fast Payments',
     'payment.step1': 'Buy via Eneba / Wise / Crypto',
     'payment.step2': 'Send receipt (WhatsApp / Telegram)',
     'payment.step3': 'Get access in less than 5 minutes',
     'payment.recommended': 'Eneba recommended (accepts credit & debit cards)',
-    
+
+    // Infrastructure content
+    'infrastructure.subtitle': 'Enterprise-grade technology powering millions of streams worldwide',
+    'infrastructure.globalServers': '50+ Global Servers',
+    'infrastructure.globalServersDesc': 'Worldwide server network for optimal performance',
+    'infrastructure.globalServersMetric': '99.9% Uptime',
+    'infrastructure.backupTitle': 'Automated Backup System',
+    'infrastructure.backupDesc': 'Multiple redundancies ensure continuous service',
+    'infrastructure.backupMetric': 'Zero Downtime',
+    'infrastructure.cdnTitle': 'Anti-Buffering CDN',
+    'infrastructure.cdnDesc': 'Smart content delivery for smooth streaming',
+    'infrastructure.cdnMetric': '< 1s Load Time',
+    'infrastructure.monitoringTitle': '24/7 Network Monitoring',
+    'infrastructure.monitoringDesc': 'Real-time monitoring and instant issue resolution',
+    'infrastructure.monitoringMetric': '24/7 Support',
+    'infrastructure.techTitle': 'Powered by Advanced Technology',
+    'infrastructure.globalCdn': 'Global CDN',
+    'infrastructure.loadBalancing': 'Load Balancing',
+    'infrastructure.autoScaling': 'Auto-Scaling',
+    'infrastructure.analytics': 'Real-time Analytics',
+
+    // Payment content
+    'payment.subtitle': 'Multiple payment options for your convenience and security',
+    'payment.eneba': 'Eneba',
+    'payment.enebaDesc': 'Credit & Debit Cards',
+    'payment.enebaFeature1': 'Instant payment',
+    'payment.enebaFeature2': 'Global acceptance',
+    'payment.enebaFeature3': 'Secure checkout',
+    'payment.wise': 'Wise',
+    'payment.wiseDesc': 'Bank Transfer',
+    'payment.wiseFeature1': 'Low fees',
+    'payment.wiseFeature2': 'Multi-currency',
+    'payment.wiseFeature3': 'Fast transfer',
+    'payment.crypto': 'Crypto',
+    'payment.cryptoDesc': 'Cryptocurrency',
+    'payment.cryptoFeature1': 'Bitcoin',
+    'payment.cryptoFeature2': 'Ethereum',
+    'payment.cryptoFeature3': 'Anonymous',
+    'payment.howItWorks': 'How It Works',
+    'payment.step1Title': 'Buy via Eneba / Wise / Crypto',
+    'payment.step1Desc': 'Choose your preferred payment method',
+    'payment.step2Title': 'Send receipt (WhatsApp / Telegram)',
+    'payment.step2Desc': 'Forward payment confirmation to our support',
+    'payment.step3Title': 'Get access in less than 5 minutes',
+    'payment.step3Desc': 'Receive your login credentials instantly',
+    'payment.acceptsCards': 'Accepts all major credit & debit cards worldwide',
+
+    // Pricing content
+    'pricing.title': 'Choose Your Perfect Plan',
+    'pricing.subtitle': 'All plans include full access to our premium features. No hidden fees, no contracts.',
+    'pricing.feature1': '20K+ Live Channels',
+    'pricing.feature2': 'VOD Movies & Series',
+    'pricing.feature3': '4K Ultra HD Quality',
+    'pricing.feature4': 'All Device Support',
+    'pricing.feature5': '24/7 Customer Support',
+    'pricing.feature6': 'Anti-Buffering CDN',
+    'pricing.feature7': 'Priority Support',
+    'pricing.feature8': 'Multi-Device Access',
+    'pricing.feature9': 'Premium Support',
+    'pricing.originallyText': 'Originally',
+    'pricing.paymentInfo': 'Secure payment processing • Instant activation • 24/7 support',
+    'pricing.creditCards': 'Credit Cards',
+    'pricing.bankTransfer': 'Bank Transfer',
+    'pricing.cryptocurrency': 'Cryptocurrency',
+
     // Footer
     'footer.reseller': 'Want to become a reseller? Join our program.',
     'footer.margins': 'High Margins',
@@ -69,14 +141,23 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.email': 'Send an Email',
     'footer.responseTime': 'Average response time: under 30 minutes',
     'footer.getSupport': 'Get Support',
-    
+    'footer.copyright': '© 2024 GeniusTV. All rights reserved.',
+    'footer.sslSecured': 'SSL Secured',
+    'footer.globalCdn': 'Global CDN',
+    'footer.product': 'Product',
+    'footer.company': 'Company',
+
+    // FAQ content
+    'faq.mainTitle': 'Frequently Asked Questions (FAQ)',
+    'faq.intro': "Welcome to our FAQ section. We've compiled answers to the most common questions about our IPTV streaming service to give you total confidence in GeniusTV. Our goal is to provide you with the information you need, ensuring your experience is as seamless and secure as possible.",
+
     // FAQ Page
     'faq.title': 'Frequently Asked Questions',
     'faq.subtitle': 'Find answers to common questions about GeniusTV IPTV service',
     'faq.stillNeedHelp': 'Still need help?',
     'faq.whatsappSupport': 'WhatsApp Support',
     'faq.telegramSupport': 'Telegram Support',
-    
+
     // Contact Page
     'contact.title': ' Contact an agent now',
     'contact.subtitle': 'Get instant help from our technical team',
@@ -93,7 +174,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.responseTimes': 'Response Times',
     'contact.technicalIssues': 'Technical Issues?',
     'contact.beforeContacting': 'Before contacting support, try these quick fixes:',
-    
+
     // Apps Page
     'apps.title': 'Best Apps for IPTV Streaming by Device',
     'apps.subtitle': 'Choose the perfect IPTV application for your device to get the best streaming experience',
@@ -114,7 +195,7 @@ const translations: Record<Language, Record<string, string>> = {
     'apps.readyDesc': 'Choose your subscription plan and get instant access to all IPTV apps and setup guides',
     'apps.viewPricing': 'View Pricing Plans',
     'apps.contactSupport': 'Contact Support',
-    
+
     // Blog Page
     'blog.title': 'Latest Insights on IPTV Technology & Streaming Trends',
     'blog.subtitle': 'Stay updated with the latest IPTV news, tutorials, and industry insights',
@@ -127,7 +208,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.categories.comparison': 'Comparison',
     'blog.categories.legal': 'Legal',
     'blog.categories.apps': 'Apps',
-    
+
     // Reseller Page
     'reseller.title': 'Become a GeniusTV Reseller',
     'reseller.subtitle': 'Join our profitable reseller program and start earning with premium IPTV services',
@@ -163,16 +244,16 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.reseller': 'Revendedor',
     'nav.contact': 'Contacto',
     'header.startNow': 'Comenzar Ahora',
-    
+
     // Hero Section
     'hero.title': 'Streaming estable, rápido e ininterrumpido.',
     'hero.subtitle': 'Miles de canales en vivo y contenido bajo demanda. Funciona en Smart TV, PC y móvil. Obtén acceso en minutos.',
     'hero.startFrom': 'Comenzar desde $15',
     'hero.whatsapp': 'Hablar con un agente ahora',
-    
+
     // Testimonials
     'testimonials.title': 'No confíes en nuestra palabra. Confía en nuestros clientes.',
-    
+
     // Infrastructure
     'infrastructure.title': 'La Infraestructura Goliath',
     'infrastructure.servers': 'Servidores Globales',
@@ -183,7 +264,81 @@ const translations: Record<Language, Record<string, string>> = {
     'infrastructure.channels': 'Canales',
     'infrastructure.quality': 'Calidad',
     'infrastructure.support': 'Soporte',
-    
+
+    // Testimonials content
+    'testimonials.subtitle': 'Comentarios reales de clientes reales usando GeniusTV todos los días',
+    'testimonials.whatsapp': 'WhatsApp',
+    'testimonials.read': 'Leído',
+    'testimonials.testimonial1': "Llevo usando GeniusTV 6 meses, ¡nunca tuve problemas de buffering! Calidad perfecta 👍",
+    'testimonials.testimonial2': "Configuración rápida, gran equipo de soporte. Funciona perfectamente en mi Samsung TV 📺",
+    'testimonials.testimonial3': "¡Por fin encontré IPTV confiable! Todos los canales funcionan, sin interrupciones ⭐",
+    'testimonials.testimonial4': "El soporte me ayudó a configurarlo en 5 minutos. ¡Servicio increíble! 🔥",
+    'testimonials.testimonial5': "El mejor servicio IPTV que he probado. La calidad 4K es increíble 🎬",
+
+    // Infrastructure content
+    'infrastructure.subtitle': 'Tecnología de nivel empresarial potenciando millones de streams mundialmente',
+    'infrastructure.globalServers': '50+ Servidores Globales',
+    'infrastructure.globalServersDesc': 'Red de servidores mundial para rendimiento óptimo',
+    'infrastructure.globalServersMetric': '99.9% Tiempo Activo',
+    'infrastructure.backupTitle': 'Sistema de Respaldo Automático',
+    'infrastructure.backupDesc': 'Múltiples redundancias aseguran servicio continuo',
+    'infrastructure.backupMetric': 'Cero Tiempo Inactivo',
+    'infrastructure.cdnTitle': 'CDN Anti-Buffering',
+    'infrastructure.cdnDesc': 'Entrega inteligente de contenido para streaming fluido',
+    'infrastructure.cdnMetric': '< 1s Tiempo de Carga',
+    'infrastructure.monitoringTitle': 'Monitoreo de Red 24/7',
+    'infrastructure.monitoringDesc': 'Monitoreo en tiempo real y resolución instantánea de problemas',
+    'infrastructure.monitoringMetric': 'Soporte 24/7',
+    'infrastructure.techTitle': 'Potenciado por Tecnología Avanzada',
+    'infrastructure.globalCdn': 'CDN Global',
+    'infrastructure.loadBalancing': 'Balanceo de Carga',
+    'infrastructure.autoScaling': 'Auto-Escalado',
+    'infrastructure.analytics': 'Analíticas en Tiempo Real',
+
+    // Payment content
+    'payment.subtitle': 'Múltiples opciones de pago para tu conveniencia y seguridad',
+    'payment.eneba': 'Eneba',
+    'payment.enebaDesc': 'Tarjetas de Crédito y Débito',
+    'payment.enebaFeature1': 'Pago instantáneo',
+    'payment.enebaFeature2': 'Aceptación global',
+    'payment.enebaFeature3': 'Checkout seguro',
+    'payment.wise': 'Wise',
+    'payment.wiseDesc': 'Transferencia Bancaria',
+    'payment.wiseFeature1': 'Tarifas bajas',
+    'payment.wiseFeature2': 'Multi-moneda',
+    'payment.wiseFeature3': 'Transferencia rápida',
+    'payment.crypto': 'Crypto',
+    'payment.cryptoDesc': 'Criptomoneda',
+    'payment.cryptoFeature1': 'Bitcoin',
+    'payment.cryptoFeature2': 'Ethereum',
+    'payment.cryptoFeature3': 'Anónimo',
+    'payment.howItWorks': 'Cómo Funciona',
+    'payment.step1Title': 'Comprar vía Eneba / Wise / Crypto',
+    'payment.step1Desc': 'Elige tu método de pago preferido',
+    'payment.step2Title': 'Enviar recibo (WhatsApp / Telegram)',
+    'payment.step2Desc': 'Reenvía la confirmación de pago a nuestro soporte',
+    'payment.step3Title': 'Obtener acceso en menos de 5 minutos',
+    'payment.step3Desc': 'Recibe tus credenciales de acceso instantáneamente',
+    'payment.acceptsCards': 'Acepta todas las principales tarjetas de crédito y débito mundialmente',
+
+    // Pricing content
+    'pricing.title': 'Elige Tu Plan Perfecto',
+    'pricing.subtitle': 'Todos los planes incluyen acceso completo a nuestras características premium. Sin tarifas ocultas, sin contratos.',
+    'pricing.feature1': '20K+ Canales en Vivo',
+    'pricing.feature2': 'Películas y Series VOD',
+    'pricing.feature3': 'Calidad 4K Ultra HD',
+    'pricing.feature4': 'Soporte para Todos los Dispositivos',
+    'pricing.feature5': 'Atención al Cliente 24/7',
+    'pricing.feature6': 'CDN Anti-Buffering',
+    'pricing.feature7': 'Soporte Prioritario',
+    'pricing.feature8': 'Acceso Multi-Dispositivo',
+    'pricing.feature9': 'Soporte Premium',
+    'pricing.originallyText': 'Originalmente',
+    'pricing.paymentInfo': 'Procesamiento de pagos seguro • Activación instantánea • Soporte 24/7',
+    'pricing.creditCards': 'Tarjetas de Crédito',
+    'pricing.bankTransfer': 'Transferencia Bancaria',
+    'pricing.cryptocurrency': 'Criptomoneda',
+
     // Pricing
     'pricing.month1': '1 Mes',
     'pricing.months3': '3 Meses',
@@ -192,14 +347,14 @@ const translations: Record<Language, Record<string, string>> = {
     'pricing.mostPopular': 'Más Popular',
     'pricing.bestDeal': 'Mejor Oferta',
     'pricing.subscribeNow': 'Suscribirse Ahora',
-    
+
     // Payment Methods
     'payment.title': 'Pagos 100% Seguros y Rápidos',
     'payment.step1': 'Comprar vía Eneba / Wise / Crypto',
     'payment.step2': 'Enviar recibo (WhatsApp / Telegram)',
     'payment.step3': 'Obtener acceso en menos de 5 minutos',
     'payment.recommended': 'Eneba recomendado (acepta tarjetas de crédito y débito)',
-    
+
     // Footer
     'footer.reseller': '¿Quieres ser revendedor? Únete a nuestro programa.',
     'footer.margins': 'Altos Márgenes',
@@ -212,14 +367,18 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.email': 'Enviar un Email',
     'footer.responseTime': 'Tiempo de respuesta promedio: menos de 30 minutos',
     'footer.getSupport': 'Obtener Soporte',
-    
+
     // FAQ Page
     'faq.title': 'Preguntas Frecuentes',
     'faq.subtitle': 'Encuentra respuestas a preguntas comunes sobre el servicio IPTV de GeniusTV',
     'faq.stillNeedHelp': '¿Aún necesitas ayuda?',
     'faq.whatsappSupport': 'Soporte WhatsApp',
     'faq.telegramSupport': 'Soporte Telegram',
-    
+
+    // FAQ content
+    'faq.mainTitle': 'Preguntas Frecuentes (FAQ)',
+    'faq.intro': 'Bienvenido a nuestra sección de FAQ. Hemos compilado respuestas a las preguntas más comunes sobre nuestro servicio de streaming IPTV para darte total confianza en GeniusTV. Nuestro objetivo es proporcionarte la información que necesitas, asegurando que tu experiencia sea lo más fluida y segura posible.',
+
     // Contact Page
     'contact.title': 'Contacte con un agente ahora',
     'contact.subtitle': 'Obtén ayuda instantánea de nuestro equipo técnico',
@@ -236,7 +395,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.responseTimes': 'Tiempos de Respuesta',
     'contact.technicalIssues': '¿Problemas Técnicos?',
     'contact.beforeContacting': 'Antes de contactar soporte, prueba estas soluciones rápidas:',
-    
+
     // Apps Page
     'apps.title': 'Mejores Apps para Streaming IPTV por Dispositivo',
     'apps.subtitle': 'Elige la aplicación IPTV perfecta para tu dispositivo para obtener la mejor experiencia de streaming',
@@ -257,7 +416,7 @@ const translations: Record<Language, Record<string, string>> = {
     'apps.readyDesc': 'Elige tu plan de suscripción y obtén acceso instantáneo a todas las apps IPTV y guías de configuración',
     'apps.viewPricing': 'Ver Planes de Precios',
     'apps.contactSupport': 'Contactar Soporte',
-    
+
     // Blog Page
     'blog.title': 'Últimas Perspectivas sobre Tecnología IPTV y Tendencias de Streaming',
     'blog.subtitle': 'Mantente actualizado con las últimas noticias IPTV, tutoriales e insights de la industria',
@@ -270,7 +429,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.categories.comparison': 'Comparación',
     'blog.categories.legal': 'Legal',
     'blog.categories.apps': 'Apps',
-    
+
     // Reseller Page
     'reseller.title': 'Conviértete en Revendedor de GeniusTV',
     'reseller.subtitle': 'Únete a nuestro programa de revendedores rentable y comienza a ganar con servicios IPTV premium',
@@ -306,16 +465,16 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.reseller': 'Revendeur',
     'nav.contact': 'Contact',
     'header.startNow': 'Commencer Maintenant',
-    
+
     // Hero Section
     'hero.title': 'Streaming stable, rapide et ininterrompu.',
     'hero.subtitle': 'Des milliers de chaînes en direct et de contenu à la demande. Fonctionne sur Smart TV, PC et mobile. Accès en quelques minutes.',
     'hero.startFrom': 'Commencer à partir de 15$',
     'hero.whatsapp': 'Parler à un agent maintenant',
-    
+
     // Testimonials
     'testimonials.title': 'Ne nous croyez pas sur parole. Faites confiance à nos clients.',
-    
+
     // Infrastructure
     'infrastructure.title': 'L\'Infrastructure Goliath',
     'infrastructure.servers': 'Serveurs Globaux',
@@ -326,7 +485,93 @@ const translations: Record<Language, Record<string, string>> = {
     'infrastructure.channels': 'Chaînes',
     'infrastructure.quality': 'Qualité',
     'infrastructure.support': 'Support',
-    
+
+    // Testimonials content
+    'testimonials.subtitle': 'Vrais commentaires de vrais clients utilisant GeniusTV chaque jour',
+    'testimonials.whatsapp': 'WhatsApp',
+    'testimonials.read': 'Lu',
+    'testimonials.testimonial1': "J'utilise GeniusTV depuis 6 mois, jamais eu de problèmes de mise en mémoire tampon ! Qualité parfaite 👍",
+    'testimonials.testimonial2': "Configuration rapide, excellente équipe de support. Fonctionne parfaitement sur ma Samsung TV 📺",
+    'testimonials.testimonial3': "Enfin trouvé une IPTV fiable ! Toutes les chaînes fonctionnent, pas d'interruptions ⭐",
+    'testimonials.testimonial4': "Le support m'a aidé à le configurer en 5 minutes. Service incroyable ! 🔥",
+    'testimonials.testimonial5': "Meilleur service IPTV que j'ai essayé. La qualité 4K est incroyable 🎬",
+
+    // Infrastructure content  
+    'infrastructure.subtitle': 'Technologie de niveau entreprise alimentant des millions de streams dans le monde',
+    'infrastructure.globalServers': '50+ Serveurs Globaux',
+    'infrastructure.globalServersDesc': 'Réseau de serveurs mondial pour performance optimale',
+    'infrastructure.globalServersMetric': '99.9% Temps de Fonctionnement',
+    'infrastructure.backupTitle': 'Système de Sauvegarde Automatique',
+    'infrastructure.backupDesc': 'Multiples redondances assurent un service continu',
+    'infrastructure.backupMetric': 'Zéro Temps d\'Arrêt',
+    'infrastructure.cdnTitle': 'CDN Anti-Buffering',
+    'infrastructure.cdnDesc': 'Livraison intelligente de contenu pour streaming fluide',
+    'infrastructure.cdnMetric': '< 1s Temps de Chargement',
+    'infrastructure.monitoringTitle': 'Surveillance Réseau 24/7',
+    'infrastructure.monitoringDesc': 'Surveillance en temps réel et résolution instantanée des problèmes',
+    'infrastructure.monitoringMetric': 'Support 24/7',
+    'infrastructure.techTitle': 'Alimenté par Technologie Avancée',
+    'infrastructure.globalCdn': 'CDN Global',
+    'infrastructure.loadBalancing': 'Équilibrage de Charge',
+    'infrastructure.autoScaling': 'Auto-Mise à l\'Échelle',
+    'infrastructure.analytics': 'Analytiques Temps Réel',
+
+    // Payment content
+    'payment.subtitle': 'Options de paiement multiples pour votre commodité et sécurité',
+    'payment.eneba': 'Eneba',
+    'payment.enebaDesc': 'Cartes de Crédit et Débit',
+    'payment.enebaFeature1': 'Paiement instantané',
+    'payment.enebaFeature2': 'Acceptation mondiale',
+    'payment.enebaFeature3': 'Checkout sécurisé',
+    'payment.wise': 'Wise',
+    'payment.wiseDesc': 'Virement Bancaire',
+    'payment.wiseFeature1': 'Frais réduits',
+    'payment.wiseFeature2': 'Multi-devise',
+    'payment.wiseFeature3': 'Transfert rapide',
+    'payment.crypto': 'Crypto',
+    'payment.cryptoDesc': 'Cryptomonnaie',
+    'payment.cryptoFeature1': 'Bitcoin',
+    'payment.cryptoFeature2': 'Ethereum',
+    'payment.cryptoFeature3': 'Anonyme',
+    'payment.howItWorks': 'Comment Ça Fonctionne',
+    'payment.step1Title': 'Acheter via Eneba / Wise / Crypto',
+    'payment.step1Desc': 'Choisissez votre méthode de paiement préférée',
+    'payment.step2Title': 'Envoyer reçu (WhatsApp / Telegram)',
+    'payment.step2Desc': 'Transférer la confirmation de paiement à notre support',
+    'payment.step3Title': 'Obtenir accès en moins de 5 minutes',
+    'payment.step3Desc': 'Recevez vos identifiants de connexion instantanément',
+    'payment.acceptsCards': 'Accepte toutes les principales cartes de crédit et débit dans le monde',
+
+    // Pricing content
+    'pricing.title': 'Choisissez Votre Plan Parfait',
+    'pricing.subtitle': 'Tous les plans incluent un accès complet à nos fonctionnalités premium. Pas de frais cachés, pas de contrats.',
+    'pricing.feature1': '20K+ Chaînes en Direct',
+    'pricing.feature2': 'Films et Séries VOD',
+    'pricing.feature3': 'Qualité 4K Ultra HD',
+    'pricing.feature4': 'Support Tous Appareils',
+    'pricing.feature5': 'Support Client 24/7',
+    'pricing.feature6': 'CDN Anti-Buffering',
+    'pricing.feature7': 'Support Prioritaire',
+    'pricing.feature8': 'Accès Multi-Appareils',
+    'pricing.feature9': 'Support Premium',
+    'pricing.originallyText': 'Originalement',
+    'pricing.paymentInfo': 'Traitement de paiement sécurisé • Activation instantanée • Support 24/7',
+    'pricing.creditCards': 'Cartes de Crédit',
+    'pricing.bankTransfer': 'Virement Bancaire',
+    'pricing.cryptocurrency': 'Cryptomonnaie',
+
+    // Footer content
+    'footer.copyright': '© 2024 GeniusTV. Tous droits réservés.',
+    'footer.sslSecured': 'SSL Sécurisé',
+    'footer.globalCdn': 'CDN Global',
+    'footer.product': 'Produit',
+    'footer.company': 'Entreprise',
+
+    // FAQ content
+    'faq.mainTitle': 'Questions Fréquemment Posées (FAQ)',
+    'faq.intro': 'Bienvenue dans notre section FAQ. Nous avons compilé des réponses aux questions les plus courantes sur notre service de streaming IPTV pour vous donner une confiance totale en GeniusTV. Notre objectif est de vous fournir les informations dont vous avez besoin, en veillant à ce que votre expérience soit aussi fluide et sécurisée que possible.',
+
+
     // Add more French translations...
     'pricing.month1': '1 Mois',
     'pricing.months3': '3 Mois',
@@ -342,7 +587,7 @@ const translations: Record<Language, Record<string, string>> = {
     'payment.step2': 'Envoyer reçu (WhatsApp / Telegram)',
     'payment.step3': 'Obtenir accès en moins de 5 minutes',
     'payment.recommended': 'Eneba recommandé (accepte cartes de crédit et débit)',
-    
+
     // Footer
     'footer.reseller': 'Voulez-vous devenir revendeur ? Rejoignez notre programme.',
     'footer.margins': 'Marges Élevées',
@@ -355,14 +600,14 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.email': 'Envoyer un Email',
     'footer.responseTime': 'Temps de réponse moyen : moins de 30 minutes',
     'footer.getSupport': 'Obtenir Support',
-    
+
     // FAQ Page
     'faq.title': 'Questions Fréquemment Posées',
     'faq.subtitle': 'Trouvez des réponses aux questions courantes sur le service IPTV GeniusTV',
     'faq.stillNeedHelp': 'Besoin d\'aide supplémentaire ?',
     'faq.whatsappSupport': 'Support WhatsApp',
     'faq.telegramSupport': 'Support Telegram',
-    
+
     // Contact Page
     'contact.title': 'Contacter le Support',
     'contact.subtitle': 'Obtenez une aide instantanée de notre équipe technique',
@@ -379,7 +624,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.responseTimes': 'Temps de Réponse',
     'contact.technicalIssues': 'Problèmes Techniques ?',
     'contact.beforeContacting': 'Avant de contacter le support, essayez ces solutions rapides :',
-    
+
     // Apps Page
     'apps.title': 'Meilleures Applications pour Streaming IPTV par Appareil',
     'apps.subtitle': 'Choisissez l\'application IPTV parfaite pour votre appareil pour obtenir la meilleure expérience de streaming',
@@ -400,7 +645,7 @@ const translations: Record<Language, Record<string, string>> = {
     'apps.readyDesc': 'Choisissez votre plan d\'abonnement et obtenez un accès instantané à toutes les applications IPTV et guides de configuration',
     'apps.viewPricing': 'Voir les Plans de Prix',
     'apps.contactSupport': 'Contacter le Support',
-    
+
     // Blog Page
     'blog.title': 'Dernières Perspectives sur la Technologie IPTV et les Tendances de Streaming',
     'blog.subtitle': 'Restez à jour avec les dernières nouvelles IPTV, tutoriels et insights de l\'industrie',
@@ -413,7 +658,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.categories.comparison': 'Comparaison',
     'blog.categories.legal': 'Légal',
     'blog.categories.apps': 'Applications',
-    
+
     // Reseller Page
     'reseller.title': 'Devenez Revendeur GeniusTV',
     'reseller.subtitle': 'Rejoignez notre programme de revendeurs rentable et commencez à gagner avec les services IPTV premium',
@@ -449,18 +694,101 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.reseller': 'Rivenditore',
     'nav.contact': 'Contatto',
     'header.startNow': 'Inizia Ora',
-    
+
     // Hero Section
     'hero.title': 'Streaming stabile, veloce e ininterrotto.',
     'hero.subtitle': 'Migliaia di canali live e contenuti on-demand. Funziona su Smart TV, PC e mobile. Accesso in pochi minuti.',
     'hero.startFrom': 'Inizia da $15',
     'hero.whatsapp': 'Parla con un agente ora',
-    
+
     // Add more Italian translations...
 
-      // Testimonials
+    // Testimonials content
     'testimonials.title': 'Non fidarti delle nostre parole. Fidati dei nostri clienti.',
-    
+    'testimonials.subtitle': 'Feedback reali da clienti reali che usano GeniusTV ogni giorno',
+    'testimonials.whatsapp': 'WhatsApp',
+    'testimonials.read': 'Letto',
+    'testimonials.testimonial1': "Uso GeniusTV da 6 mesi, mai avuto problemi di buffering! Qualità perfetta 👍",
+    'testimonials.testimonial2': "Configurazione veloce, ottimo team di supporto. Funziona perfettamente sulla mia Samsung TV 📺",
+    'testimonials.testimonial3': "Finalmente trovato IPTV affidabile! Tutti i canali funzionano, nessuna interruzione ⭐",
+    'testimonials.testimonial4': "Il supporto mi ha aiutato a configurarlo in 5 minuti. Servizio incredibile! 🔥",
+    'testimonials.testimonial5': "Miglior servizio IPTV che abbia mai provato. La qualità 4K è incredibile 🎬",
+
+    // Infrastructure content
+    'infrastructure.subtitle': 'Tecnologia di livello aziendale che alimenta milioni di stream nel mondo',
+    'infrastructure.globalServers': '50+ Server Globali',
+    'infrastructure.globalServersDesc': 'Rete di server mondiale per prestazioni ottimali',
+    'infrastructure.globalServersMetric': '99.9% Tempo di Attività',
+    'infrastructure.backupTitle': 'Sistema di Backup Automatico',
+    'infrastructure.backupDesc': 'Ridondanze multiple assicurano servizio continuo',
+    'infrastructure.backupMetric': 'Zero Tempo di Inattività',
+    'infrastructure.cdnTitle': 'CDN Anti-Buffering',
+    'infrastructure.cdnDesc': 'Consegna intelligente di contenuti per streaming fluido',
+    'infrastructure.cdnMetric': '< 1s Tempo di Caricamento',
+    'infrastructure.monitoringTitle': 'Monitoraggio Rete 24/7',
+    'infrastructure.monitoringDesc': 'Monitoraggio in tempo reale e risoluzione istantanea dei problemi',
+    'infrastructure.monitoringMetric': 'Supporto 24/7',
+    'infrastructure.techTitle': 'Alimentato da Tecnologia Avanzata',
+    'infrastructure.globalCdn': 'CDN Globale',
+    'infrastructure.loadBalancing': 'Bilanciamento del Carico',
+    'infrastructure.autoScaling': 'Auto-Scaling',
+    'infrastructure.analytics': 'Analitiche in Tempo Reale',
+
+    // Payment content
+    'payment.subtitle': 'Opzioni di pagamento multiple per la tua comodità e sicurezza',
+    'payment.eneba': 'Eneba',
+    'payment.enebaDesc': 'Carte di Credito e Debito',
+    'payment.enebaFeature1': 'Pagamento istantaneo',
+    'payment.enebaFeature2': 'Accettazione globale',
+    'payment.enebaFeature3': 'Checkout sicuro',
+    'payment.wise': 'Wise',
+    'payment.wiseDesc': 'Bonifico Bancario',
+    'payment.wiseFeature1': 'Commissioni basse',
+    'payment.wiseFeature2': 'Multi-valuta',
+    'payment.wiseFeature3': 'Trasferimento veloce',
+    'payment.crypto': 'Crypto',
+    'payment.cryptoDesc': 'Criptovaluta',
+    'payment.cryptoFeature1': 'Bitcoin',
+    'payment.cryptoFeature2': 'Ethereum',
+    'payment.cryptoFeature3': 'Anonimo',
+    'payment.howItWorks': 'Come Funziona',
+    'payment.step1Title': 'Acquista tramite Eneba / Wise / Crypto',
+    'payment.step1Desc': 'Scegli il tuo metodo di pagamento preferito',
+    'payment.step2Title': 'Invia ricevuta (WhatsApp / Telegram)',
+    'payment.step2Desc': 'Inoltra la conferma di pagamento al nostro supporto',
+    'payment.step3Title': 'Ottieni accesso in meno di 5 minuti',
+    'payment.step3Desc': 'Ricevi le tue credenziali di accesso istantaneamente',
+    'payment.acceptsCards': 'Accetta tutte le principali carte di credito e debito a livello mondiale',
+
+    // Pricing content
+    'pricing.title': 'Scegli il Tuo Piano Perfetto',
+    'pricing.subtitle': 'Tutti i piani includono accesso completo alle nostre funzionalità premium. Nessuna tariffa nascosta, nessun contratto.',
+    'pricing.feature1': '20K+ Canali Live',
+    'pricing.feature2': 'Film e Serie VOD',
+    'pricing.feature3': 'Qualità 4K Ultra HD',
+    'pricing.feature4': 'Supporto Tutti i Dispositivi',
+    'pricing.feature5': 'Assistenza Clienti 24/7',
+    'pricing.feature6': 'CDN Anti-Buffering',
+    'pricing.feature7': 'Supporto Prioritario',
+    'pricing.feature8': 'Accesso Multi-Dispositivo',
+    'pricing.feature9': 'Supporto Premium',
+    'pricing.originallyText': 'Originariamente',
+    'pricing.paymentInfo': 'Elaborazione pagamenti sicura • Attivazione istantanea • Supporto 24/7',
+    'pricing.creditCards': 'Carte di Credito',
+    'pricing.bankTransfer': 'Bonifico Bancario',
+    'pricing.cryptocurrency': 'Criptovaluta',
+
+    // Footer content
+    'footer.copyright': '© 2024 GeniusTV. Tutti i diritti riservati.',
+    'footer.sslSecured': 'SSL Protetto',
+    'footer.globalCdn': 'CDN Globale',
+    'footer.product': 'Prodotto',
+    'footer.company': 'Azienda',
+
+    // FAQ content
+    'faq.mainTitle': 'Domande Frequenti (FAQ)',
+    'faq.intro': 'Benvenuto nella nostra sezione FAQ. Abbiamo compilato risposte alle domande più comuni sul nostro servizio di streaming IPTV per darti totale fiducia in GeniusTV. Il nostro obiettivo è fornirti le informazioni di cui hai bisogno, assicurando che la tua esperienza sia il più fluida e sicura possibile.',
+
     // Infrastructure
     'infrastructure.title': 'L\'Infrastruttura Goliath',
     'infrastructure.servers': 'Server Globali',
@@ -471,7 +799,7 @@ const translations: Record<Language, Record<string, string>> = {
     'infrastructure.channels': 'Canali',
     'infrastructure.quality': 'Qualità',
     'infrastructure.support': 'Supporto',
-    
+
     // Pricing
     'pricing.month1': '1 Mese',
     'pricing.months3': '3 Mesi',
@@ -480,14 +808,14 @@ const translations: Record<Language, Record<string, string>> = {
     'pricing.mostPopular': 'Più Popolare',
     'pricing.bestDeal': 'Miglior Offerta',
     'pricing.subscribeNow': 'Iscriviti Ora',
-    
+
     // Payment Methods
     'payment.title': 'Pagamenti 100% Sicuri e Veloci',
     'payment.step1': 'Acquista tramite Eneba / Wise / Crypto',
     'payment.step2': 'Invia ricevuta (WhatsApp / Telegram)',
     'payment.step3': 'Ottieni accesso in meno di 5 minuti',
     'payment.recommended': 'Eneba raccomandato (accetta carte di credito e debito)',
-    
+
     // Footer
     'footer.reseller': 'Vuoi diventare rivenditore? Unisciti al nostro programma.',
     'footer.margins': 'Margini Elevati',
@@ -500,14 +828,14 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.email': 'Invia un Email',
     'footer.responseTime': 'Tempo di risposta medio: meno di 30 minuti',
     'footer.getSupport': 'Ottieni Supporto',
-    
+
     // FAQ Page
     'faq.title': 'Domande Frequenti',
     'faq.subtitle': 'Trova risposte alle domande comuni sul servizio IPTV GeniusTV',
     'faq.stillNeedHelp': 'Hai ancora bisogno di aiuto?',
     'faq.whatsappSupport': 'Supporto WhatsApp',
     'faq.telegramSupport': 'Supporto Telegram',
-    
+
     // Contact Page
     'contact.title': 'Contatta il Supporto',
     'contact.subtitle': 'Ottieni aiuto istantaneo dal nostro team tecnico',
@@ -524,7 +852,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.responseTimes': 'Tempi di Risposta',
     'contact.technicalIssues': 'Problemi Tecnici?',
     'contact.beforeContacting': 'Prima di contattare il supporto, prova queste soluzioni rapide:',
-    
+
     // Apps Page
     'apps.title': 'Migliori App per Streaming IPTV per Dispositivo',
     'apps.subtitle': 'Scegli l\'applicazione IPTV perfetta per il tuo dispositivo per ottenere la migliore esperienza di streaming',
@@ -545,7 +873,7 @@ const translations: Record<Language, Record<string, string>> = {
     'apps.readyDesc': 'Scegli il tuo piano di abbonamento e ottieni accesso istantaneo a tutte le app IPTV e guide di configurazione',
     'apps.viewPricing': 'Visualizza Piani Prezzi',
     'apps.contactSupport': 'Contatta Supporto',
-    
+
     // Blog Page
     'blog.title': 'Ultime Prospettive sulla Tecnologia IPTV e Tendenze di Streaming',
     'blog.subtitle': 'Rimani aggiornato con le ultime notizie IPTV, tutorial e insight del settore',
@@ -558,7 +886,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.categories.comparison': 'Confronto',
     'blog.categories.legal': 'Legale',
     'blog.categories.apps': 'Applicazioni',
-    
+
     // Reseller Page
     'reseller.title': 'Diventa Rivenditore GeniusTV',
     'reseller.subtitle': 'Unisciti al nostro programma rivenditori redditizio e inizia a guadagnare con i servizi IPTV premium',
@@ -584,7 +912,7 @@ const translations: Record<Language, Record<string, string>> = {
     'reseller.ready': 'Pronto per Iniziare a Guadagnare?',
     'reseller.readyDesc': 'Contatta il nostro team rivenditori per iniziare la tua attività IPTV redditizia',
     'reseller.contactUs': 'Contatta Team Rivenditori',
-    
+
   },
   de: {
     // Header
@@ -595,18 +923,18 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.reseller': 'Wiederverkäufer',
     'nav.contact': 'Kontakt',
     'header.startNow': 'Jetzt Starten',
-    
+
     // Hero Section
     'hero.title': 'Stabiles, schnelles und ununterbrochenes Streaming.',
     'hero.subtitle': 'Tausende von Live-Kanälen und On-Demand-Inhalten. Funktioniert auf Smart TV, PC und Handy. Zugang in Minuten.',
     'hero.startFrom': 'Ab $15 starten',
     'hero.whatsapp': 'Jetzt mit einem Agenten sprechen',
-    
+
     // Add more German translations...
 
     // Testimonials
     'testimonials.title': 'Vertrauen Sie nicht unseren Worten. Vertrauen Sie unseren Kunden.',
-    
+
     // Infrastructure
     'infrastructure.title': 'Die Goliath-Infrastruktur',
     'infrastructure.servers': 'Globale Server',
@@ -617,7 +945,7 @@ const translations: Record<Language, Record<string, string>> = {
     'infrastructure.channels': 'Kanäle',
     'infrastructure.quality': 'Qualität',
     'infrastructure.support': 'Support',
-    
+
     // Pricing
     'pricing.month1': '1 Monat',
     'pricing.months3': '3 Monate',
@@ -626,14 +954,99 @@ const translations: Record<Language, Record<string, string>> = {
     'pricing.mostPopular': 'Am Beliebtesten',
     'pricing.bestDeal': 'Bestes Angebot',
     'pricing.subscribeNow': 'Jetzt Abonnieren',
-    
+
     // Payment Methods
     'payment.title': '100% Sichere und Schnelle Zahlungen',
     'payment.step1': 'Kaufen über Eneba / Wise / Crypto',
     'payment.step2': 'Beleg senden (WhatsApp / Telegram)',
     'payment.step3': 'Zugang in weniger als 5 Minuten erhalten',
     'payment.recommended': 'Eneba empfohlen (akzeptiert Kredit- und Debitkarten)',
-    
+
+    // Testimonials content
+    'testimonials.subtitle': 'Echtes Feedback von echten Kunden, die GeniusTV täglich nutzen',
+    'testimonials.whatsapp': 'WhatsApp',
+    'testimonials.read': 'Gelesen',
+    'testimonials.testimonial1': "Nutze GeniusTV seit 6 Monaten, nie Pufferprobleme gehabt! Perfekte Qualität 👍",
+    'testimonials.testimonial2': "Schnelle Einrichtung, tolles Support-Team. Funktioniert perfekt auf meinem Samsung TV 📺",
+    'testimonials.testimonial3': "Endlich zuverlässiges IPTV gefunden! Alle Kanäle funktionieren, keine Unterbrechungen ⭐",
+    'testimonials.testimonial4': "Support half mir bei der Einrichtung in 5 Minuten. Erstaunlicher Service! 🔥",
+    'testimonials.testimonial5': "Bester IPTV-Service, den ich ausprobiert habe. 4K-Qualität ist unglaublich 🎬",
+
+    // Infrastructure content
+    'infrastructure.subtitle': 'Unternehmenstaugliche Technologie, die Millionen von Streams weltweit antreibt',
+    'infrastructure.globalServers': '50+ Globale Server',
+    'infrastructure.globalServersDesc': 'Weltweites Servernetzwerk für optimale Leistung',
+    'infrastructure.globalServersMetric': '99.9% Betriebszeit',
+    'infrastructure.backupTitle': 'Automatisches Backup-System',
+    'infrastructure.backupDesc': 'Mehrfache Redundanzen gewährleisten kontinuierlichen Service',
+    'infrastructure.backupMetric': 'Null Ausfallzeit',
+    'infrastructure.cdnTitle': 'Anti-Puffering CDN',
+    'infrastructure.cdnDesc': 'Intelligente Inhaltslieferung für reibungsloses Streaming',
+    'infrastructure.cdnMetric': '< 1s Ladezeit',
+    'infrastructure.monitoringTitle': '24/7 Netzwerk-Überwachung',
+    'infrastructure.monitoringDesc': 'Echtzeit-Überwachung und sofortige Problemlösung',
+    'infrastructure.monitoringMetric': '24/7 Support',
+    'infrastructure.techTitle': 'Angetrieben von Fortschrittlicher Technologie',
+    'infrastructure.globalCdn': 'Globales CDN',
+    'infrastructure.loadBalancing': 'Lastausgleich',
+    'infrastructure.autoScaling': 'Auto-Skalierung',
+    'infrastructure.analytics': 'Echtzeit-Analytics',
+
+    // Payment content
+    'payment.subtitle': 'Mehrere Zahlungsoptionen für Ihre Bequemlichkeit und Sicherheit',
+    'payment.eneba': 'Eneba',
+    'payment.enebaDesc': 'Kredit- und Debitkarten',
+    'payment.enebaFeature1': 'Sofortige Zahlung',
+    'payment.enebaFeature2': 'Weltweite Akzeptanz',
+    'payment.enebaFeature3': 'Sicherer Checkout',
+    'payment.wise': 'Wise',
+    'payment.wiseDesc': 'Banküberweisung',
+    'payment.wiseFeature1': 'Niedrige Gebühren',
+    'payment.wiseFeature2': 'Multi-Währung',
+    'payment.wiseFeature3': 'Schneller Transfer',
+    'payment.crypto': 'Crypto',
+    'payment.cryptoDesc': 'Kryptowährung',
+    'payment.cryptoFeature1': 'Bitcoin',
+    'payment.cryptoFeature2': 'Ethereum',
+    'payment.cryptoFeature3': 'Anonym',
+    'payment.howItWorks': 'Wie Es Funktioniert',
+    'payment.step1Title': 'Kaufen über Eneba / Wise / Crypto',
+    'payment.step1Desc': 'Wählen Sie Ihre bevorzugte Zahlungsmethode',
+    'payment.step2Title': 'Beleg senden (WhatsApp / Telegram)',
+    'payment.step2Desc': 'Zahlungsbestätigung an unseren Support weiterleiten',
+    'payment.step3Title': 'Zugang in weniger als 5 Minuten erhalten',
+    'payment.step3Desc': 'Erhalten Sie Ihre Anmeldedaten sofort',
+    'payment.acceptsCards': 'Akzeptiert alle wichtigen Kredit- und Debitkarten weltweit',
+
+    // Pricing content
+    'pricing.title': 'Wählen Sie Ihren Perfekten Plan',
+    'pricing.subtitle': 'Alle Pläne beinhalten vollen Zugang zu unseren Premium-Features. Keine versteckten Gebühren, keine Verträge.',
+    'pricing.feature1': '20K+ Live-Kanäle',
+    'pricing.feature2': 'VOD Filme & Serien',
+    'pricing.feature3': '4K Ultra HD Qualität',
+    'pricing.feature4': 'Alle Geräte-Unterstützung',
+    'pricing.feature5': '24/7 Kundensupport',
+    'pricing.feature6': 'Anti-Puffering CDN',
+    'pricing.feature7': 'Prioritäts-Support',
+    'pricing.feature8': 'Multi-Geräte Zugang',
+    'pricing.feature9': 'Premium Support',
+    'pricing.originallyText': 'Ursprünglich',
+    'pricing.paymentInfo': 'Sichere Zahlungsabwicklung • Sofortige Aktivierung • 24/7 Support',
+    'pricing.creditCards': 'Kreditkarten',
+    'pricing.bankTransfer': 'Banküberweisung',
+    'pricing.cryptocurrency': 'Kryptowährung',
+
+    // Footer content
+    'footer.copyright': '© 2024 GeniusTV. Alle Rechte vorbehalten.',
+    'footer.sslSecured': 'SSL Gesichert',
+    'footer.globalCdn': 'Globales CDN',
+    'footer.product': 'Produkt',
+    'footer.company': 'Unternehmen',
+
+    // FAQ content
+    'faq.mainTitle': 'Häufig Gestellte Fragen (FAQ)',
+    'faq.intro': 'Willkommen in unserem FAQ-Bereich. Wir haben Antworten auf die häufigsten Fragen zu unserem IPTV-Streaming-Service zusammengestellt, um Ihnen volles Vertrauen in GeniusTV zu geben. Unser Ziel ist es, Ihnen die Informationen zu liefern, die Sie benötigen, und sicherzustellen, dass Ihre Erfahrung so reibungslos und sicher wie möglich ist.',
+
     // Footer
     'footer.reseller': 'Möchten Sie Wiederverkäufer werden? Treten Sie unserem Programm bei.',
     'footer.margins': 'Hohe Margen',
@@ -646,14 +1059,14 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.email': 'E-Mail Senden',
     'footer.responseTime': 'Durchschnittliche Antwortzeit: unter 30 Minuten',
     'footer.getSupport': 'Support Erhalten',
-    
+
     // FAQ Page
     'faq.title': 'Häufig Gestellte Fragen',
     'faq.subtitle': 'Finden Sie Antworten auf häufige Fragen zum GeniusTV IPTV-Service',
     'faq.stillNeedHelp': 'Brauchen Sie noch Hilfe?',
     'faq.whatsappSupport': 'WhatsApp Support',
     'faq.telegramSupport': 'Telegram Support',
-    
+
     // Contact Page
     'contact.title': 'Support Kontaktieren',
     'contact.subtitle': 'Erhalten Sie sofortige Hilfe von unserem technischen Team',
@@ -670,7 +1083,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.responseTimes': 'Antwortzeiten',
     'contact.technicalIssues': 'Technische Probleme?',
     'contact.beforeContacting': 'Bevor Sie den Support kontaktieren, versuchen Sie diese schnellen Lösungen:',
-    
+
     // Apps Page
     'apps.title': 'Beste Apps für IPTV-Streaming nach Gerät',
     'apps.subtitle': 'Wählen Sie die perfekte IPTV-Anwendung für Ihr Gerät, um das beste Streaming-Erlebnis zu erhalten',
@@ -691,7 +1104,7 @@ const translations: Record<Language, Record<string, string>> = {
     'apps.readyDesc': 'Wählen Sie Ihren Abonnement-Plan und erhalten Sie sofortigen Zugang zu allen IPTV-Apps und Setup-Anleitungen',
     'apps.viewPricing': 'Preispläne Ansehen',
     'apps.contactSupport': 'Support Kontaktieren',
-    
+
     // Blog Page
     'blog.title': 'Neueste Einblicke in IPTV-Technologie & Streaming-Trends',
     'blog.subtitle': 'Bleiben Sie auf dem neuesten Stand mit den neuesten IPTV-Nachrichten, Tutorials und Brancheneinblicken',
@@ -704,7 +1117,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.categories.comparison': 'Vergleich',
     'blog.categories.legal': 'Rechtlich',
     'blog.categories.apps': 'Anwendungen',
-    
+
     // Reseller Page
     'reseller.title': 'Werden Sie GeniusTV Wiederverkäufer',
     'reseller.subtitle': 'Treten Sie unserem profitablen Wiederverkäufer-Programm bei und beginnen Sie mit Premium-IPTV-Services zu verdienen',
@@ -742,18 +1155,18 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.reseller': 'موزع',
     'nav.contact': 'اتصل بنا',
     'header.startNow': 'ابدأ الآن',
-    
+
     // Hero Section
     'hero.title': 'بث مستقر وسريع وغير منقطع.',
     'hero.subtitle': 'آلاف القنوات المباشرة والمحتوى عند الطلب. يعمل على التلفزيون الذكي والكمبيوتر والهاتف المحمول. احصل على الوصول في دقائق.',
     'hero.startFrom': 'ابدأ من 15 دولار',
     'hero.whatsapp': 'تحدث مع وكيل الآن',
-    
+
     // Add more Arabic translations...
 
     // Testimonials
     'testimonials.title': 'لا تثق في كلماتنا. ثق في عملائنا.',
-    
+
     // Infrastructure
     'infrastructure.title': 'البنية التحتية العملاقة',
     'infrastructure.servers': 'خوادم عالمية',
@@ -764,7 +1177,7 @@ const translations: Record<Language, Record<string, string>> = {
     'infrastructure.channels': 'القنوات',
     'infrastructure.quality': 'الجودة',
     'infrastructure.support': 'الدعم',
-    
+
     // Pricing
     'pricing.month1': 'شهر واحد',
     'pricing.months3': '3 أشهر',
@@ -773,14 +1186,14 @@ const translations: Record<Language, Record<string, string>> = {
     'pricing.mostPopular': 'الأكثر شعبية',
     'pricing.bestDeal': 'أفضل صفقة',
     'pricing.subscribeNow': 'اشترك الآن',
-    
+
     // Payment Methods
     'payment.title': 'مدفوعات آمنة وسريعة 100%',
     'payment.step1': 'الشراء عبر Eneba / Wise / Crypto',
     'payment.step2': 'إرسال الإيصال (واتساب / تلغرام)',
     'payment.step3': 'الحصول على الوصول في أقل من 5 دقائق',
     'payment.recommended': 'Eneba موصى به (يقبل بطاقات الائتمان والخصم)',
-    
+
     // Footer
     'footer.reseller': 'هل تريد أن تصبح موزعاً؟ انضم إلى برنامجنا.',
     'footer.margins': 'هوامش عالية',
@@ -793,14 +1206,14 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.email': 'إرسال بريد إلكتروني',
     'footer.responseTime': 'متوسط وقت الاستجابة: أقل من 30 دقيقة',
     'footer.getSupport': 'الحصول على الدعم',
-    
+
     // FAQ Page
     'faq.title': 'الأسئلة الشائعة',
     'faq.subtitle': 'ابحث عن إجابات للأسئلة الشائعة حول خدمة IPTV من GeniusTV',
     'faq.stillNeedHelp': 'لا تزال بحاجة إلى مساعدة؟',
     'faq.whatsappSupport': 'دعم واتساب',
     'faq.telegramSupport': 'دعم تلغرام',
-    
+
     // Contact Page
     'contact.title': 'اتصل بالدعم',
     'contact.subtitle': 'احصل على مساعدة فورية من فريقنا التقني',
@@ -817,7 +1230,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.responseTimes': 'أوقات الاستجابة',
     'contact.technicalIssues': 'مشاكل تقنية؟',
     'contact.beforeContacting': 'قبل الاتصال بالدعم، جرب هذه الحلول السريعة:',
-    
+
     // Apps Page
     'apps.title': 'أفضل تطبيقات البث IPTV حسب الجهاز',
     'apps.subtitle': 'اختر تطبيق IPTV المثالي لجهازك للحصول على أفضل تجربة بث',
@@ -838,7 +1251,7 @@ const translations: Record<Language, Record<string, string>> = {
     'apps.readyDesc': 'اختر خطة الاشتراك الخاصة بك واحصل على وصول فوري لجميع تطبيقات IPTV وأدلة الإعداد',
     'apps.viewPricing': 'عرض خطط الأسعار',
     'apps.contactSupport': 'اتصل بالدعم',
-    
+
     // Blog Page
     'blog.title': 'أحدث الرؤى حول تقنية IPTV واتجاهات البث',
     'blog.subtitle': 'ابق محدثاً مع أحدث أخبار IPTV والدروس ورؤى الصناعة',
@@ -851,7 +1264,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.categories.comparison': 'مقارنة',
     'blog.categories.legal': 'قانوني',
     'blog.categories.apps': 'التطبيقات',
-    
+
     // Reseller Page
     'reseller.title': 'كن موزع GeniusTV',
     'reseller.subtitle': 'انضم إلى برنامج الموزعين المربح واربح مع خدمات IPTV المميزة',
@@ -877,6 +1290,91 @@ const translations: Record<Language, Record<string, string>> = {
     'reseller.ready': 'جاهز لبدء الكسب؟',
     'reseller.readyDesc': 'اتصل بفريق الموزعين لدينا لبدء عملك المربح في IPTV',
     'reseller.contactUs': 'اتصل بفريق الموزعين',
+
+    // Testimonials content
+    'testimonials.subtitle': 'GeniusTV تعليقات حقيقية من عملاء حقيقيين يستخدمون  كل يوم',
+    'testimonials.whatsapp': 'واتساب',
+    'testimonials.read': 'مقروء',
+    'testimonials.testimonial1': "أستخدم GeniusTV منذ 6 أشهر، لم أواجه مشاكل في التخزين المؤقت أبداً! جودة مثالية 👍",
+    'testimonials.testimonial2': "إعداد سريع، فريق دعم رائع. يعمل بشكل مثالي على Samsung TV 📺",
+    'testimonials.testimonial3': "أخيراً وجدت IPTV موثوق! جميع القنوات تعمل، بدون انقطاع ⭐",
+    'testimonials.testimonial4': "ساعدني الدعم في الإعداد في 5 دقائق. خدمة رائعة! 🔥",
+    'testimonials.testimonial5': "أفضل خدمة IPTV جربتها. جودة 4K مذهلة 🎬",
+
+    // Infrastructure content
+    'infrastructure.subtitle': 'تقنية على مستوى المؤسسات تشغل ملايين البثوث عالمياً',
+    'infrastructure.globalServers': '50+ خادم عالمي',
+    'infrastructure.globalServersDesc': 'شبكة خوادم عالمية للأداء الأمثل',
+    'infrastructure.globalServersMetric': '99.9% وقت التشغيل',
+    'infrastructure.backupTitle': 'نظام النسخ الاحتياطي التلقائي',
+    'infrastructure.backupDesc': 'تكرارات متعددة تضمن الخدمة المستمرة',
+    'infrastructure.backupMetric': 'صفر وقت توقف',
+    'infrastructure.cdnTitle': 'شبكة CDN مضادة للتخزين المؤقت',
+    'infrastructure.cdnDesc': 'توصيل ذكي للمحتوى لبث سلس',
+    'infrastructure.cdnMetric': '< 1ث وقت التحميل',
+    'infrastructure.monitoringTitle': 'مراقبة الشبكة 24/7',
+    'infrastructure.monitoringDesc': 'مراقبة فورية وحل فوري للمشاكل',
+    'infrastructure.monitoringMetric': 'دعم 24/7',
+    'infrastructure.techTitle': 'مدعوم بتقنية متقدمة',
+    'infrastructure.globalCdn': 'شبكة CDN عالمية',
+    'infrastructure.loadBalancing': 'توزيع الأحمال',
+    'infrastructure.autoScaling': 'التوسع التلقائي',
+    'infrastructure.analytics': 'تحليلات فورية',
+
+    // Payment content
+    'payment.subtitle': 'خيارات دفع متعددة لراحتك وأمانك',
+    'payment.eneba': 'Eneba',
+    'payment.enebaDesc': 'بطاقات ائتمان وخصم',
+    'payment.enebaFeature1': 'دفع فوري',
+    'payment.enebaFeature2': 'قبول عالمي',
+    'payment.enebaFeature3': 'دفع آمن',
+    'payment.wise': 'Wise',
+    'payment.wiseDesc': 'تحويل بنكي',
+    'payment.wiseFeature1': 'رسوم منخفضة',
+    'payment.wiseFeature2': 'متعدد العملات',
+    'payment.wiseFeature3': 'تحويل سريع',
+    'payment.crypto': 'Crypto',
+    'payment.cryptoDesc': 'عملة مشفرة',
+    'payment.cryptoFeature1': 'بيتكوين',
+    'payment.cryptoFeature2': 'إيثريوم',
+    'payment.cryptoFeature3': 'مجهول',
+    'payment.howItWorks': 'كيف يعمل',
+    'payment.step1Title': 'اشتر عبر Eneba / Wise / Crypto',
+    'payment.step1Desc': 'اختر طريقة الدفع المفضلة لديك',
+    'payment.step2Title': 'أرسل الإيصال (واتساب / تلغرام)',
+    'payment.step2Desc': 'أرسل تأكيد الدفع إلى دعمنا',
+    'payment.step3Title': 'احصل على الوصول في أقل من 5 دقائق',
+    'payment.step3Desc': 'استلم بيانات تسجيل الدخول فوراً',
+    'payment.acceptsCards': 'يقبل جميع بطاقات الائتمان والخصم الرئيسية عالمياً',
+
+    // Pricing content
+    'pricing.title': 'اختر خطتك المثالية',
+    'pricing.subtitle': 'تشمل جميع الخطط وصولاً كاملاً لميزاتنا المميزة. بدون رسوم مخفية، بدون عقود.',
+    'pricing.feature1': '20K+ قناة مباشرة',
+    'pricing.feature2': 'أفلام ومسلسلات VOD',
+    'pricing.feature3': 'جودة 4K فائقة الوضوح',
+    'pricing.feature4': 'دعم جميع الأجهزة',
+    'pricing.feature5': 'دعم العملاء 24/7',
+    'pricing.feature6': 'شبكة CDN مضادة للتخزين المؤقت',
+    'pricing.feature7': 'دعم أولوية',
+    'pricing.feature8': 'وصول متعدد الأجهزة',
+    'pricing.feature9': 'دعم مميز',
+    'pricing.originallyText': 'في الأصل',
+    'pricing.paymentInfo': 'معالجة دفع آمنة • تفعيل فوري • دعم 24/7',
+    'pricing.creditCards': 'بطاقات ائتمان',
+    'pricing.bankTransfer': 'تحويل بنكي',
+    'pricing.cryptocurrency': 'عملة مشفرة',
+
+    // Footer content
+    'footer.copyright': '© 2024 GeniusTV. جميع الحقوق محفوظة.',
+    'footer.sslSecured': 'SSL محمي',
+    'footer.globalCdn': 'شبكة CDN عالمية',
+    'footer.product': 'المنتج',
+    'footer.company': 'الشركة',
+
+    // FAQ content
+    'faq.mainTitle': 'الأسئلة الشائعة (FAQ)',
+    'faq.intro': 'مرحباً بك في قسم الأسئلة الشائعة. لقد جمعنا إجابات على الأسئلة الأكثر شيوعاً حول خدمة البث IPTV لدينا لمنحك ثقة كاملة في GeniusTV. هدفنا هو تزويدك بالمعلومات التي تحتاجها، مما يضمن أن تكون تجربتك سلسة وآمنة قدر الإمكان.',
   }
 };
 

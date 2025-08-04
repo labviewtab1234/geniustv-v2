@@ -113,9 +113,9 @@ const FAQ = () => {
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto  w-full ">
           <div className="text-center mb-12">
-            <h1 className="font-bold mb-4" style={{ fontSize: '2.5rem' }}>Frequently Asked Questions (FAQ)</h1>
+            <h1 className="font-bold mb-4" style={{ fontSize: '2.5rem' }}>{t('faq.mainTitle')}</h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Welcome to our FAQ section. We've compiled answers to the most common questions about our IPTV streaming service to give you total confidence in GeniusTV. Our goal is to provide you with the information you need, ensuring your experience is as seamless and secure as possible.
+              {t('faq.intro')}
             </p>
           </div>
           <div className="space-y-12">

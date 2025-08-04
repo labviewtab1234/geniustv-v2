@@ -760,22 +760,22 @@ This isn't just another guide; it's your definitive roadmap to finding the best 
 
   if (!currentPost) {
     return (
-      <div className="min-h-screen bg-background">
-        <Header />
-        <main className="container mx-auto px-4 py-12">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
-            <p className="text-muted-foreground mb-8">The blog post you're looking for doesn't exist.</p>
-            <Link to="/blog">
-              <Button>
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Back to Blog
-              </Button>
-            </Link>
-          </div>
-        </main>
-        <Footer />
-      </div>
+<div className="min-h-screen bg-background">
+          <Header />
+          <main className="container mx-auto px-4 py-12">
+            <div className="text-center">
+              <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
+              <p className="text-muted-foreground mb-8">The blog post you're looking for doesn't exist.</p>
+              <Link to="/blog">
+                <Button>
+                  <ArrowLeft className="h-4 w-4 mr-2" />
+                  Back to Blog
+                </Button>
+              </Link>
+            </div>
+          </main>
+          <Footer />
+        </div>
     );
   }
 
@@ -783,7 +783,7 @@ This isn't just another guide; it's your definitive roadmap to finding the best 
     <div className="min-h-screen bg-background">
       <Header />
       <main className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Breadcrumbs */}
           <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
             <Link to="/" className="hover:text-primary">Home</Link>

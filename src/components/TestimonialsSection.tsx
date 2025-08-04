@@ -140,7 +140,8 @@ export const TestimonialsSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real feedback from real customers using GeniusTV every day
+            {/* Real feedback from real customers using GeniusTV every day */}
+             {t('testimonials.subtitle')}
           </p>
         </div>
         

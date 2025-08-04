@@ -242,7 +242,7 @@ export const PricingSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            All plans include full access to our premium features. No hidden fees, no contracts.
+           {t('pricing.subtitle')}
           </p>
         </div>
 

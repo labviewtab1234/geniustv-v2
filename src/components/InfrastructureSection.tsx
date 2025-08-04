@@ -48,7 +48,7 @@ export const InfrastructureSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Enterprise-grade technology powering millions of streams worldwide
+              {t('infrastructure.subtitle')}
           </p>
         </div>
 
