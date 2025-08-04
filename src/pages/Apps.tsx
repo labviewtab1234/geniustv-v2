@@ -14,9 +14,10 @@ const Apps = () => {
       device: "Android",
       icon: <Smartphone className="h-8 w-8" />,
       apps: [
-        { name: "IPTV Smarters", description: "Most popular IPTV player", recommended: true },
-        { name: "TiviMate", description: "Premium IPTV experience", recommended: true },
-        { name: "GSE Smart IPTV", description: "Feature-rich player", recommended: false },
+   
+        { name: "8k Player", description: "Our own IPTV player", recommended: true },
+        { name: "Ibo Player Pro", description: "Premium IPTV experience", recommended: true },
+        { name: "IPTV Stream Player", description: "Simple and reliable", recommended: false },
         { name: "Perfect Player", description: "Simple and reliable", recommended: false }
       ]
     },
@@ -24,40 +25,40 @@ const Apps = () => {
       device: "iOS / Apple TV",
       icon: <Tablet className="h-8 w-8" />,
       apps: [
-        { name: "GSE Smart IPTV", description: "Best iOS IPTV app", recommended: true },
-        { name: "iPlayTV", description: "Clean interface", recommended: true },
-        { name: "IPTV", description: "Simple and effective", recommended: false },
-        { name: "nPlayer", description: "Multi-format support", recommended: false }
+        { name: "Ibo Player Pro", description: "Premium IPTV experience", recommended: true },
+        { name: "IPTVX", description: "The All-Round Champion", recommended: true },
+        { name: "Smarters Player", description: "The User-Friendly Workhorse", recommended: false },
+        { name: "IPTV Player Live", description: "100% free and solid", recommended: false }
       ]
     },
     {
       device: "Smart TVs",
       icon: <Tv className="h-8 w-8" />,
       apps: [
-        { name: "Smart IPTV", description: "Universal Smart TV app", recommended: true },
-        { name: "Net IPTV", description: "Samsung/LG compatible", recommended: true },
-        { name: "SS IPTV", description: "Popular TV solution", recommended: false },
-        { name: "OTT Navigator", description: "Advanced features", recommended: false }
+        { name: "Ibo Player Pro", description: "Premium IPTV experience", recommended: true },
+        { name: "TiviMate", description: "Premium experience", recommended: true },
+        { name: "IPTV Smarters Pro", description: "The Classic app", recommended: false },
+        { name: "Net IPTV", description: "Samsung/LG compatible", recommended: false },
       ]
     },
     {
       device: "Windows / Mac",
       icon: <Monitor className="h-8 w-8" />,
       apps: [
-        { name: "VLC Media Player", description: "Free and versatile", recommended: true },
-        { name: "MyIPTV Player", description: "Dedicated IPTV app", recommended: true },
-        { name: "Kodi", description: "Media center solution", recommended: false },
-        { name: "PotPlayer", description: "Advanced media player", recommended: false }
+        { name: "Ibo Player Pro", description: "Premium IPTV experience", recommended: true },
+        { name: "IPTV Smarters Pro", description: "Best Multiplataform", recommended: true },
+        { name: "MyIPTV Player", description: "Dedicated IPTV app", recommended: false },
+        { name: "IPTV Stream Player", description: "Simple and reliable", recommended: false },
       ]
     },
     {
       device: "Amazon Firestick",
       icon: <Tv className="h-8 w-8" />,
       apps: [
-        { name: "Downloader + IPTV Smarters", description: "Best Firestick combo", recommended: true },
+        { name: "Downloader + 8k Player", description: "Best Firestick combo", recommended: true },
         { name: "TiviMate", description: "Premium experience", recommended: true },
-        { name: "Perfect Player", description: "Lightweight option", recommended: false },
-        { name: "Kodi", description: "Full media center", recommended: false }
+        { name: "Downloader + IPTV Smarters", description: "Best Firestick combo", recommended: false },
+        { name: "Perfect Player", description: "Lightweight option", recommended: false }
       ]
     }
   ];
