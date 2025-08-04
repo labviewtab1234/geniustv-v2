@@ -13,7 +13,7 @@ const Blog = () => {
     {
       title: "Best IPTV Service 2025: Your Ultimate Guide to Uninterrupted 4K Streaming & Live TV Without Cable",
       excerpt: "Tired of Sky-High Cable Bills? Welcome to the Future of TV!",
-      image: "/placeholder.svg",
+      image: "/blogs/blog1.png",
       date: "January 15, 2025",
       readTime: "5 min read",
       category: "Technology",
@@ -151,7 +151,7 @@ const Blog = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-video">
+                <div className="aspect-video" style={{ aspectRatio: "18/9" }}>
                   <img 
                     src={post.image}
                     alt={post.title}

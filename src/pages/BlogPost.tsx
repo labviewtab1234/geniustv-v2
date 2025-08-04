@@ -13,7 +13,7 @@ const BlogPost = () => {
   const blogPosts = {
     "best-iptv-service-2025": {
       title: "Best IPTV Service 2025: Your Ultimate Guide to Uninterrupted 4K Streaming & Live TV Without Cable",
-      image: "/placeholder.svg",
+      image: "/blogs/blog1.png",
       date: "January 15, 2025",
       readTime: "5 min read",
       category: "Technology",
@@ -818,14 +818,14 @@ This isn't just another guide; it's your definitive roadmap to finding the best 
                   <Clock className="h-4 w-4" />
                   {currentPost.readTime}
                 </div>
-                <Button variant="outline" size="sm">
+                {/* <Button variant="outline" size="sm">
                   <Share2 className="h-4 w-4 mr-2" />
                   Share
-                </Button>
+                </Button> */}
               </div>
 
               {/* Featured Image */}
-              <div className="aspect-video mb-8">
+              <div className="aspect-video mb-8" style={{ aspectRatio: "18/18" }}>
                 <img
                   src={currentPost.image}
                   alt={currentPost.title}
