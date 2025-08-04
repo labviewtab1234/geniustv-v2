@@ -192,7 +192,7 @@ const Apps = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg">View Pricing Plans</Button>
-                <Button variant="outline" size="lg">Talk to an agent now</Button> // in green
+                <Button variant="outline" size="lg">Talk to an agent now</Button>
               </div>
             </CardContent>
           </Card>
