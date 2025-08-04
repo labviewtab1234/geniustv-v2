@@ -341,15 +341,15 @@ export const PricingSection = () => {
 
         {/* Payment Info */}
         <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
+          <p className="text-muted-foreground mb-4" style={{color:'#00FFCC'}}>
             Secure payment processing • Instant activation • 24/7 support
           </p>
           <div className="flex justify-center items-center gap-4 text-sm text-muted-foreground">
-            <span>💳 Credit Cards</span>
-            <span>•</span>
-            <span>🏦 Bank Transfer</span>
-            <span>•</span>
-            <span>₿ Cryptocurrency</span>
+            {/*<span>💳 Credit Cards</span>*/}
+            {/*<span>•</span>*/}
+            {/*<span>🏦 Bank Transfer</span>*/}
+            {/*<span>•</span>*/}
+            {/*<span>₿ Cryptocurrency</span>*/}
           </div>
         </div>
       </div>
