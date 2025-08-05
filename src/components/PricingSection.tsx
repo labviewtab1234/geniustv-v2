@@ -80,7 +80,7 @@ const pricingPlansByTab = {
   two: [
     {
       title: "1 Month",
-      price: "$20",
+      price: "$25",
       period: "month",
       popular: false,
       features: [
@@ -95,10 +95,10 @@ const pricingPlansByTab = {
     },
     {
       title: "3 Months",
-      price: "$45",
+      price: "$50",
       period: "3 months",
       popular: true,
-      originalPrice: "$45",
+      originalPrice: "$90",
       savings: "Save $15",
       features: [
         "35K+ Live Channels",
@@ -112,10 +112,10 @@ const pricingPlansByTab = {
     },
     {
       title: "6 Months",
-      price: "$75",
+      price: "$85",
       period: "6 months",
       popular: false,
-      originalPrice: "$70",
+      originalPrice: "$140",
       savings: "Save $20",
       badge: "Best Deal",
       features: [
@@ -131,10 +131,10 @@ const pricingPlansByTab = {
     },
     {
       title: "12 Months",
-      price: "$130",
+      price: "$150",
       period: "year",
       popular: false,
-      originalPrice: "$110",
+      originalPrice: "$210",
       savings: "Save $95",
       features: [
         "35K+ Live Channels",
@@ -150,7 +150,7 @@ const pricingPlansByTab = {
   three: [
     {
       title: "1 Month",
-      price: "$30",
+      price: "$35",
       period: "month",
       popular: false,
       features: [
@@ -168,7 +168,7 @@ const pricingPlansByTab = {
       price: "$75",
       period: "3 months",
       popular: true,
-      originalPrice: "$45",
+      originalPrice: "$110",
       savings: "Save $15",
       features: [
         "35K+ Live Channels",
@@ -182,10 +182,10 @@ const pricingPlansByTab = {
     },
     {
       title: "6 Months",
-      price: "$115",
+      price: "$125",
       period: "6 months",
       popular: false,
-      originalPrice: "$70",
+      originalPrice: "$200",
       savings: "Save $20",
       badge: "Best Deal",
       features: [
@@ -201,10 +201,10 @@ const pricingPlansByTab = {
     },
     {
       title: "12 Months",
-      price: "$175",
+      price: "$200",
       period: "year",
       popular: false,
-      originalPrice: "$110",
+      originalPrice: "$280",
       savings: "Save $95",
       features: [
         "35K+ Live Channels",
