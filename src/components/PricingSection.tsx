@@ -27,7 +27,7 @@ const pricingPlansByTab = {
       title: "3 Months",
       price: "$30",
       period: "3 months",
-      popular: true,
+      popular: false,
       originalPrice: "$45",
       savings: "Save $15",
       features: [
@@ -47,7 +47,7 @@ const pricingPlansByTab = {
       popular: false,
       originalPrice: "$70",
       savings: "Save $20",
-      badge: "Best Deal",
+      // badge: "Best Deal",
       features: [
         "35K+ Live Channels",
         "VOD Movies & Series",
@@ -63,7 +63,7 @@ const pricingPlansByTab = {
       title: "12 Months",
       price: "$85",
       period: "year",
-      popular: false,
+      popular: true,
       originalPrice: "$110",
       savings: "Save $95",
       features: [
@@ -97,7 +97,7 @@ const pricingPlansByTab = {
       title: "3 Months",
       price: "$50",
       period: "3 months",
-      popular: true,
+      popular: false,
       originalPrice: "$90",
       savings: "Save $15",
       features: [
@@ -117,7 +117,7 @@ const pricingPlansByTab = {
       popular: false,
       originalPrice: "$140",
       savings: "Save $20",
-      badge: "Best Deal",
+      // badge: "Best Deal",
       features: [
         "35K+ Live Channels",
         "VOD Movies & Series",
@@ -133,9 +133,10 @@ const pricingPlansByTab = {
       title: "12 Months",
       price: "$150",
       period: "year",
-      popular: false,
+      popular: true,
       originalPrice: "$210",
       savings: "Save $95",
+        //  badge: "Best Deal",
       features: [
         "35K+ Live Channels",
         "VOD Movies & Series",
@@ -167,7 +168,7 @@ const pricingPlansByTab = {
       title: "3 Months",
       price: "$75",
       period: "3 months",
-      popular: true,
+      popular: false,
       originalPrice: "$110",
       savings: "Save $15",
       features: [
@@ -187,7 +188,7 @@ const pricingPlansByTab = {
       popular: false,
       originalPrice: "$200",
       savings: "Save $20",
-      badge: "Best Deal",
+      // badge: "Best Deal",
       features: [
         "35K+ Live Channels",
         "VOD Movies & Series",
@@ -203,7 +204,7 @@ const pricingPlansByTab = {
       title: "12 Months",
       price: "$200",
       period: "year",
-      popular: false,
+      popular: true,
       originalPrice: "$280",
       savings: "Save $95",
       features: [
@@ -272,7 +273,7 @@ export const PricingSection = () => {
             >
               {plan.popular && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground">
-                  {t('pricing.mostPopular')}
+                  {t('pricing.bestDeal')}
                 </Badge>
               )}
 
