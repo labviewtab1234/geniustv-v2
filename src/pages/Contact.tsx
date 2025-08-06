@@ -156,37 +156,37 @@ const Contact = () => {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Response Times</CardTitle>
+                             <CardTitle>{t('contact.responseTimes')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">WhatsApp</span>
-                    <span className="font-semibold text-primary">&lt; 30 minutes</span>
+                 <span className="font-semibold text-primary">&lt; 30 {t('contact.minutes')}</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Telegram</span>
-                    <span className="font-semibold text-primary">&lt; 30 minutes</span>
+               <span className="font-semibold text-primary">&lt; 1 {t('contact.hours')}</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Contact Form</span>
-                    <span className="font-semibold text-primary">&lt; 3 hours</span>
+                 <span className="font-semibold text-primary">&lt; 2 {t('contact.hours')}</span>
                   </div>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Technical Issues?</CardTitle>
+                  <CardTitle>{t('contact.technicalIssues')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    Before contacting support, try these quick fixes:
+                   {t('contact.beforeContacting')}
                   </p>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• Restart your IPTV app</li>
-                    <li>• Check your internet connection</li>
-                    <li>• Clear app cache/data</li>
-                    <li>• Try a different server location</li>
+                    <li>• {t('contact.restartApp')}</li>
+                    <li>• {t('contact.checkConnection')}</li>
+                    <li>• {t('contact.clearCache')}</li>
+                    <li>• {t('contact.tryServer')}</li>
                   </ul>
                 </CardContent>
               </Card>

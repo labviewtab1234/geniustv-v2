@@ -147,6 +147,18 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.product': 'Product',
     'footer.company': 'Company',
 
+    'footer.support': 'Support',
+    'footer.needSupport': 'Need Support?',
+    'footer.hereToHelp': "We're Here to Help",
+    'footer.description': 'Premium IPTV service delivering stable, high-quality streaming to millions of users worldwide.',
+    'footer.aboutUs': 'About Us',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms of Service',
+
+    'nav.aboutUs': 'About Us',
+    'nav.privacy': 'Privacy Policy',
+    'nav.terms': 'Terms of Service',
+
     // FAQ content
     'faq.mainTitle': 'Frequently Asked Questions (FAQ)',
     'faq.intro': "Welcome to our FAQ section. We've compiled answers to the most common questions about our IPTV streaming service to give you total confidence in GeniusTV. Our goal is to provide you with the information you need, ensuring your experience is as seamless and secure as possible.",
@@ -157,6 +169,44 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.stillNeedHelp': 'Still need help?',
     'faq.whatsappSupport': 'WhatsApp Support',
     'faq.telegramSupport': 'Telegram Support',
+        'faq.generalGettingStarted': 'General & Getting Started',
+    'faq.serviceTroubleshooting': 'Service & Troubleshooting',
+    'faq.accountPayments': 'Account & Payments',
+    'faq.legalSecurity': 'Legal & Security',
+    'faq.privacyService': 'Privacy & Our IPTV Service',
+
+    // FAQ Questions & Answers
+    'faq.whatIsIptv': 'What does IPTV mean and how does it work?',
+    'faq.whatIsIptvAnswer': '**IPTV** stands for **Internet Protocol Television**. It\'s a modern technology that delivers live TV, movies, and series directly to your device through an internet connection. Instead of traditional antennas or satellite dishes, our service streams content to you via a unique **M3U link** or **Xtream Codes**, offering a more flexible and robust entertainment experience.',
+    'faq.multipleDevices': 'Can I use GeniusTV on multiple devices?',
+    'faq.multipleDevicesAnswer': 'Yes. Your subscription plan is tied to a specific number of simultaneous connections. A single account allows one connection at a time, but for plans with two or three connections, we provide a separate, independent account for each device. This ensures a stable and uninterrupted streaming experience for everyone.',
+    'faq.bestApp': 'Which is the best IPTV app?',
+    'faq.bestAppAnswer': 'The best app often comes down to personal preference. Our service is compatible with all major **IPTV player apps**, including **IPTV Smarters Pro**, **TiviMate**, and many others. We\'ll provide you with simple, step-by-step instructions to get started on the app of your choice.',
+    'faq.willWorkTv': 'Will GeniusTV work with my TV?',
+    'faq.willWorkTvAnswer': 'Our service works with a wide range of devices. You can easily set up GeniusTV on your **Smart TV** (Samsung, LG, etc.), a streaming device like a **Firestick** or **Roku**, or even a non-smart TV with a compatible media box.',
+    'faq.notWorking': 'Why is my IPTV not working?',
+    'faq.notWorkingAnswer': 'Most issues are simple to fix. First, check your internet speed to ensure it\'s at least **30 Mbps** for HD content. If your connection is stable, try clearing your app\'s cache or restarting your device. If the issue persists, your subscription may have expired. Our dedicated support team is here to help you troubleshoot any problem.',
+    'faq.ispBlock': 'Can my internet provider block IPTV?',
+    'faq.ispBlockAnswer': 'In some regions, such as the **UK** or **Spain**, certain Internet Service Providers (ISPs) may throttle or block IPTV streams. To ensure a smooth, buffer-free viewing experience, we highly recommend using a **VPN**. A VPN helps you bypass these restrictions and protects your online privacy by encrypting your internet traffic.',
+    'faq.internetSpeed': 'What internet speed do I need for IPTV?',
+    'faq.internetSpeedAnswer': 'We recommend a stable internet connection of at least **30 Mbps** for seamless HD streaming. A faster connection is always better for optimal performance, especially if you have multiple devices connected.',
+    'faq.getService': 'How do I get my service after payment?',
+    'faq.getServiceAnswer': 'After you make a one-time payment, simply send us the receipt. Our team will instantly send you your credentials (**M3U link** or **Xtream Codes**) so you can activate your service immediately.',
+    'faq.whatAreXtream': 'What are Xtream Codes?',
+    'faq.whatAreXtreamAnswer': '**Xtream Codes** are a convenient set of login details (username, password, and a server URL) that many IPTV player apps use. We provide these codes as an alternative to an M3U link, giving you the flexibility to choose how you access our service.',
+    'faq.isLegal': 'Is IPTV legal?',
+    'faq.isLegalAnswer': 'The legality of IPTV services depends on the provider. As a **legitimate service**, GeniusTV operates within a legal framework. We prioritize the security of our customers and do not engage in the illegal distribution of content.',
+    'faq.needVpn': 'Do I need a VPN to use GeniusTV?',
+    'faq.needVpnAnswer': 'While not mandatory, we strongly recommend a **VPN**. It\'s the most effective way to protect your online privacy and avoid potential throttling from your Internet Service Provider.',
+    'faq.sharePayment': 'Does GeniusTV share my payment information?',
+    'faq.sharePaymentAnswer': '**No**. We do not handle or store any sensitive payment information. All transactions are managed by trusted third-party processors. We only keep a record of the payment proof you provide.',
+    'faq.trackViewing': 'Do you track my viewing history?',
+    'faq.trackViewingAnswer': '**Absolutely not**. We do not monitor your viewing habits, the channels you watch, or any of your streaming activity. Your usage is private.',
+    'faq.secureInfo': 'Is my personal information secure with GeniusTV?',
+    'faq.secureInfoAnswer': 'Our best security measure is our **minimal data policy**. By not collecting personal data, we significantly reduce the risk of a data breach affecting your identity. The limited information we do hold is protected by standard security protocols.',
+    'faq.dataProtection': 'How does GeniusTV\'s data protection compare to other online services?',
+    'faq.dataProtectionAnswer': 'Our commitment to **minimal data collection** sets us apart. We believe this is the most effective form of online privacy available, as we don\'t hold the sensitive information that other companies might.',
+
 
     // Contact Page
     'contact.title': ' Contact an agent now',
@@ -174,6 +224,15 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.responseTimes': 'Response Times',
     'contact.technicalIssues': 'Technical Issues?',
     'contact.beforeContacting': 'Before contacting support, try these quick fixes:',
+
+        // Contact additional
+    'contact.minutes': 'minutes',
+    'contact.hours': 'hours',
+    'contact.contactForm': 'Contact Form',
+    'contact.restartApp': 'Restart your IPTV app',
+    'contact.checkConnection': 'Check your internet connection',
+    'contact.clearCache': 'Clear app cache/data',
+    'contact.tryServer': 'Try a different server location',
 
     // Apps Page
     'apps.title': 'Best Apps for IPTV Streaming by Device',
@@ -195,6 +254,24 @@ const translations: Record<Language, Record<string, string>> = {
     'apps.readyDesc': 'Choose your subscription plan and get instant access to all IPTV apps and setup guides',
     'apps.viewPricing': 'View Pricing Plans',
     'apps.contactSupport': 'Contact Support',
+
+        // Apps additional
+    'apps.mostPopular': 'Most popular IPTV player',
+    'apps.premiumExp': 'Premium IPTV experience',
+    'apps.featureRich': 'Feature-rich player',
+    'apps.simpleReliable': 'Simple and reliable',
+    'apps.bestIos': 'Best iOS IPTV app',
+    'apps.cleanInterface': 'Clean interface',
+    'apps.simpleEffective': 'Simple and effective',
+    'apps.multiFormat': 'Multi-format support',
+    'apps.wiredConnection': 'Use wired connection when possible',
+    'apps.hardwareAcceleration': 'Enable hardware acceleration',
+    'apps.videoDecoder': 'Choose optimal video decoder',
+    'apps.bufferSize': 'Adjust buffer size for your connection',
+    'apps.closeApps': 'Close background apps',
+    'apps.use5ghz': 'Use 5GHz WiFi when available',
+    'apps.clearCache': 'Clear app cache regularly',
+    'apps.nearestServer': 'Choose nearest server location',
 
     // Blog Page
     'blog.title': 'Latest Insights on IPTV Technology & Streaming Trends',
@@ -234,6 +311,15 @@ const translations: Record<Language, Record<string, string>> = {
     'reseller.ready': 'Ready to Start Earning?',
     'reseller.readyDesc': 'Contact our reseller team to get started with your profitable IPTV business',
     'reseller.contactUs': 'Contact Reseller Team',
+
+       // Reseller additional
+    'reseller.customerMgmt': 'Customer Management',
+    'reseller.customerMgmtDesc': 'Easy dashboard to manage all your customers',
+    'reseller.sell': 'Sell',
+    'reseller.monthlySubscriptions': 'monthly subscriptions',
+    'reseller.noExpiration': 'No expiration date',
+    'reseller.technicalSupport': 'Full technical support',
+    'reseller.mgmtTools': 'Customer management tools',
   },
   es: {
     // Header
@@ -367,6 +453,17 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.email': 'Enviar un Email',
     'footer.responseTime': 'Tiempo de respuesta promedio: menos de 30 minutos',
     'footer.getSupport': 'Obtener Soporte',
+    'nav.aboutUs': 'Acerca de Nosotros',
+    'nav.privacy': 'Política de Privacidad',
+    'nav.terms': 'Términos de Servicio',
+
+        'footer.support': 'Soporte',
+    'footer.needSupport': '¿Necesitas Soporte?',
+    'footer.hereToHelp': 'Estamos Aquí para Ayudar',
+    'footer.description': 'Servicio IPTV premium que ofrece streaming estable y de alta calidad a millones de usuarios en todo el mundo.',
+    'footer.aboutUs': 'Acerca de Nosotros',
+    'footer.privacy': 'Política de Privacidad',
+    'footer.terms': 'Términos de Servicio',
 
     // FAQ Page
     'faq.title': 'Preguntas Frecuentes',
@@ -378,6 +475,47 @@ const translations: Record<Language, Record<string, string>> = {
     // FAQ content
     'faq.mainTitle': 'Preguntas Frecuentes (FAQ)',
     'faq.intro': 'Bienvenido a nuestra sección de FAQ. Hemos compilado respuestas a las preguntas más comunes sobre nuestro servicio de streaming IPTV para darte total confianza en GeniusTV. Nuestro objetivo es proporcionarte la información que necesitas, asegurando que tu experiencia sea lo más fluida y segura posible.',
+
+        'faq.generalGettingStarted': 'General y Primeros Pasos',
+    'faq.serviceTroubleshooting': 'Servicio y Solución de Problemas',
+    'faq.accountPayments': 'Cuenta y Pagos',
+    'faq.legalSecurity': 'Legal y Seguridad',
+    'faq.privacyService': 'Privacidad y Nuestro Servicio IPTV',
+
+    // FAQ Questions & Answers in Spanish
+    'faq.whatIsIptv': '¿Qué significa IPTV y cómo funciona?',
+    'faq.whatIsIptvAnswer': '**IPTV** significa **Televisión por Protocolo de Internet**. Es una tecnología moderna que entrega TV en vivo, películas y series directamente a tu dispositivo a través de una conexión a internet. En lugar de antenas tradicionales o platos satelitales, nuestro servicio transmite contenido a través de un **enlace M3U** único o **Códigos Xtream**, ofreciendo una experiencia de entretenimiento más flexible y robusta.',
+    'faq.multipleDevices': '¿Puedo usar GeniusTV en múltiples dispositivos?',
+    'faq.multipleDevicesAnswer': 'Sí. Tu plan de suscripción está vinculado a un número específico de conexiones simultáneas. Una cuenta individual permite una conexión a la vez, pero para planes con dos o tres conexiones, proporcionamos una cuenta separada e independiente para cada dispositivo. Esto asegura una experiencia de streaming estable e ininterrumpida para todos.',
+    'faq.bestApp': '¿Cuál es la mejor aplicación IPTV?',
+    'faq.bestAppAnswer': 'La mejor aplicación a menudo depende de la preferencia personal. Nuestro servicio es compatible con todas las principales **aplicaciones de reproductor IPTV**, incluyendo **IPTV Smarters Pro**, **TiviMate**, y muchas otras. Te proporcionaremos instrucciones simples paso a paso para comenzar en la aplicación de tu elección.',
+    'faq.willWorkTv': '¿Funcionará GeniusTV con mi TV?',
+    'faq.willWorkTvAnswer': 'Nuestro servicio funciona con una amplia gama de dispositivos. Puedes configurar fácilmente GeniusTV en tu **Smart TV** (Samsung, LG, etc.), un dispositivo de streaming como **Firestick** o **Roku**, o incluso un TV no inteligente con una caja multimedia compatible.',
+    'faq.notWorking': '¿Por qué no funciona mi IPTV?',
+    'faq.notWorkingAnswer': 'La mayoría de los problemas son simples de solucionar. Primero, verifica tu velocidad de internet para asegurar que sea al menos **30 Mbps** para contenido HD. Si tu conexión es estable, intenta limpiar la caché de tu aplicación o reiniciar tu dispositivo. Si el problema persiste, tu suscripción puede haber expirado. Nuestro equipo de soporte dedicado está aquí para ayudarte a solucionar cualquier problema.',
+    'faq.ispBlock': '¿Puede mi proveedor de internet bloquear IPTV?',
+    'faq.ispBlockAnswer': 'En algunas regiones, como el **Reino Unido** o **España**, ciertos Proveedores de Servicios de Internet (ISP) pueden limitar o bloquear las transmisiones IPTV. Para asegurar una experiencia de visualización fluida y sin interrupciones, recomendamos encarecidamente usar una **VPN**. Una VPN te ayuda a evitar estas restricciones y protege tu privacidad en línea encriptando tu tráfico de internet.',
+    'faq.internetSpeed': '¿Qué velocidad de internet necesito para IPTV?',
+    'faq.internetSpeedAnswer': 'Recomendamos una conexión a internet estable de al menos **30 Mbps** para streaming HD sin problemas. Una conexión más rápida siempre es mejor para un rendimiento óptimo, especialmente si tienes múltiples dispositivos conectados.',
+    'faq.getService': '¿Cómo obtengo mi servicio después del pago?',
+    'faq.getServiceAnswer': 'Después de hacer un pago único, simplemente envíanos el recibo. Nuestro equipo te enviará instantáneamente tus credenciales (**enlace M3U** o **Códigos Xtream**) para que puedas activar tu servicio inmediatamente.',
+    'faq.whatAreXtream': '¿Qué son los Códigos Xtream?',
+    'faq.whatAreXtreamAnswer': 'Los **Códigos Xtream** son un conjunto conveniente de detalles de inicio de sesión (nombre de usuario, contraseña y una URL del servidor) que muchas aplicaciones de reproductor IPTV utilizan. Proporcionamos estos códigos como alternativa a un enlace M3U, dándote la flexibilidad de elegir cómo acceder a nuestro servicio.',
+    'faq.isLegal': '¿Es legal IPTV?',
+    'faq.isLegalAnswer': 'La legalidad de los servicios IPTV depende del proveedor. Como un **servicio legítimo**, GeniusTV opera dentro de un marco legal. Priorizamos la seguridad de nuestros clientes y no participamos en la distribución ilegal de contenido.',
+    'faq.needVpn': '¿Necesito una VPN para usar GeniusTV?',
+    'faq.needVpnAnswer': 'Aunque no es obligatorio, recomendamos encarecidamente una **VPN**. Es la forma más efectiva de proteger tu privacidad en línea y evitar posibles limitaciones de tu Proveedor de Servicios de Internet.',
+    'faq.sharePayment': '¿GeniusTV comparte mi información de pago?',
+    'faq.sharePaymentAnswer': '**No**. No manejamos ni almacenamos información de pago sensible. Todas las transacciones son gestionadas por procesadores de terceros confiables. Solo mantenemos un registro de la prueba de pago que proporcionas.',
+    'faq.trackViewing': '¿Rastrean mi historial de visualización?',
+    'faq.trackViewingAnswer': '**Absolutamente no**. No monitoreamos tus hábitos de visualización, los canales que ves, o cualquier actividad de streaming. Tu uso es privado.',
+    'faq.secureInfo': '¿Es segura mi información personal con GeniusTV?',
+    'faq.secureInfoAnswer': 'Nuestra mejor medida de seguridad es nuestra **política de datos mínimos**. Al no recopilar datos personales, reducimos significativamente el riesgo de una violación de datos que afecte tu identidad. La información limitada que tenemos está protegida por protocolos de seguridad estándar.',
+    'faq.dataProtection': '¿Cómo se compara la protección de datos de GeniusTV con otros servicios en línea?',
+    'faq.dataProtectionAnswer': 'Nuestro compromiso con la **recopilación mínima de datos** nos distingue. Creemos que esta es la forma más efectiva de privacidad en línea disponible, ya que no tenemos la información sensible que otras empresas podrían tener.',
+
+
+
 
     // Contact Page
     'contact.title': 'Contacte con un agente ahora',
@@ -395,6 +533,42 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.responseTimes': 'Tiempos de Respuesta',
     'contact.technicalIssues': '¿Problemas Técnicos?',
     'contact.beforeContacting': 'Antes de contactar soporte, prueba estas soluciones rápidas:',
+
+    // Contact additional (Spanish)
+    'contact.minutes': 'minutos',
+    'contact.hours': 'horas',
+    'contact.contactForm': 'Formulario de Contacto',
+    'contact.restartApp': 'Reinicia tu app IPTV',
+    'contact.checkConnection': 'Verifica tu conexión a internet',
+    'contact.clearCache': 'Limpia cache/datos de la app',
+    'contact.tryServer': 'Prueba una ubicación de servidor diferente',
+
+     // Apps additional (Spanish)
+    'apps.mostPopular': 'Reproductor IPTV más popular',
+    'apps.premiumExp': 'Experiencia IPTV premium',
+    'apps.featureRich': 'Reproductor con muchas funciones',
+    'apps.simpleReliable': 'Simple y confiable',
+    'apps.bestIos': 'Mejor app IPTV para iOS',
+    'apps.cleanInterface': 'Interfaz limpia',
+    'apps.simpleEffective': 'Simple y efectiva',
+    'apps.multiFormat': 'Soporte multi-formato',
+    'apps.wiredConnection': 'Usa conexión por cable cuando sea posible',
+    'apps.hardwareAcceleration': 'Habilita aceleración por hardware',
+    'apps.videoDecoder': 'Elige decodificador de video óptimo',
+    'apps.bufferSize': 'Ajusta tamaño de buffer para tu conexión',
+    'apps.closeApps': 'Cierra apps en segundo plano',
+    'apps.use5ghz': 'Usa WiFi 5GHz cuando esté disponible',
+    'apps.clearCache': 'Limpia cache de app regularmente',
+    'apps.nearestServer': 'Elige ubicación de servidor más cercana',
+    
+    // Reseller additional (Spanish)
+    'reseller.customerMgmt': 'Gestión de Clientes',
+    'reseller.customerMgmtDesc': 'Panel fácil para gestionar todos tus clientes',
+    'reseller.sell': 'Vender',
+    'reseller.monthlySubscriptions': 'suscripciones mensuales',
+    'reseller.noExpiration': 'Sin fecha de vencimiento',
+    'reseller.technicalSupport': 'Soporte técnico completo',
+    'reseller.mgmtTools': 'Herramientas de gestión de clientes',
 
     // Apps Page
     'apps.title': 'Mejores Apps para Streaming IPTV por Dispositivo',
@@ -416,6 +590,8 @@ const translations: Record<Language, Record<string, string>> = {
     'apps.readyDesc': 'Elige tu plan de suscripción y obtén acceso instantáneo a todas las apps IPTV y guías de configuración',
     'apps.viewPricing': 'Ver Planes de Precios',
     'apps.contactSupport': 'Contactar Soporte',
+
+    
 
     // Blog Page
     'blog.title': 'Últimas Perspectivas sobre Tecnología IPTV y Tendencias de Streaming',
@@ -566,6 +742,9 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.globalCdn': 'CDN Global',
     'footer.product': 'Produit',
     'footer.company': 'Entreprise',
+    'nav.aboutUs': 'À propos de nous',
+    'nav.privacy': 'Politique de Confidentialité',
+    'nav.terms': 'Conditions de Service',
 
     // FAQ content
     'faq.mainTitle': 'Questions Fréquemment Posées (FAQ)',
@@ -784,6 +963,9 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.globalCdn': 'CDN Globale',
     'footer.product': 'Prodotto',
     'footer.company': 'Azienda',
+    'nav.aboutUs': 'Chi Siamo',
+    'nav.privacy': 'Politica di Riservatezza',
+    'nav.terms': 'Termini di Servizio',
 
     // FAQ content
     'faq.mainTitle': 'Domande Frequenti (FAQ)',
@@ -1059,6 +1241,9 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.email': 'E-Mail Senden',
     'footer.responseTime': 'Durchschnittliche Antwortzeit: unter 30 Minuten',
     'footer.getSupport': 'Support Erhalten',
+    'nav.aboutUs': 'Über Uns',
+    'nav.privacy': 'Datenschutz-Bestimmungen',
+    'nav.terms': 'Nutzungsbedingungen',
 
     // FAQ Page
     'faq.title': 'Häufig Gestellte Fragen',
@@ -1206,6 +1391,9 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.email': 'إرسال بريد إلكتروني',
     'footer.responseTime': 'متوسط وقت الاستجابة: أقل من 30 دقيقة',
     'footer.getSupport': 'الحصول على الدعم',
+    'nav.aboutUs': 'من نحن',
+    'nav.privacy': 'سياسة الخصوصية',
+    'nav.terms': 'شروط الخدمة',
 
     // FAQ Page
     'faq.title': 'الأسئلة الشائعة',
@@ -1379,14 +1567,26 @@ const translations: Record<Language, Record<string, string>> = {
 };
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+ const [language, setLanguage] = useState<Language>(() => {
+    // Initialize from localStorage or default to 'en'
+    if (typeof window !== 'undefined') {
+      const savedLanguage = localStorage.getItem('userLanguage') as Language;
+      return savedLanguage && ['en', 'es', 'fr', 'it', 'de', 'ar'].includes(savedLanguage) ? savedLanguage : 'en';
+    }
+    return 'en';
+  });
+
+  const handleSetLanguage = (lang: Language) => {
+    setLanguage(lang);
+    localStorage.setItem('userLanguage', lang);
+  };
 
   const t = (key: string): string => {
     return translations[language][key] || translations.en[key] || key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+   <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
       <div className={language === 'ar' ? 'rtl' : 'ltr'}>
         {children}
       </div>

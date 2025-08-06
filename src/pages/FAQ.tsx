@@ -11,88 +11,43 @@ const FAQ = () => {
 
   const faqSections = [
     {
-      title: "General & Getting Started",
+    title: t('faq.generalGettingStarted'),
       questions: [
-        {
-          question: "What does IPTV mean and how does it work?",
-          answer: "**IPTV** stands for **Internet Protocol Television**. It's a modern technology that delivers live TV, movies, and series directly to your device through an internet connection. Instead of traditional antennas or satellite dishes, our service streams content to you via a unique **M3U link** or **Xtream Codes**, offering a more flexible and robust entertainment experience."
-        },
-        {
-          question: "Can I use GeniusTV on multiple devices?",
-          answer: "Yes. Your subscription plan is tied to a specific number of simultaneous connections. A single account allows one connection at a time, but for plans with two or three connections, we provide a separate, independent account for each device. This ensures a stable and uninterrupted streaming experience for everyone."
-        },
-        {
-          question: "Which is the best IPTV app?",
-          answer: "The best app often comes down to personal preference. Our service is compatible with all major **IPTV player apps**, including **IPTV Smarters Pro**, **TiviMate**, and many others. We'll provide you with simple, step-by-step instructions to get started on the app of your choice."
-        },
-        {
-          question: "Will GeniusTV work with my TV?",
-          answer: "Our service works with a wide range of devices. You can easily set up GeniusTV on your **Smart TV** (Samsung, LG, etc.), a streaming device like a **Firestick** or **Roku**, or even a non-smart TV with a compatible media box."
-        }
+        { question: t('faq.whatIsIptv'), answer: t('faq.whatIsIptvAnswer') },
+        { question: t('faq.multipleDevices'), answer: t('faq.multipleDevicesAnswer') },
+        { question: t('faq.bestApp'), answer: t('faq.bestAppAnswer') },
+        { question: t('faq.willWorkTv'), answer: t('faq.willWorkTvAnswer') }
       ]
     },
     {
-      title: "Service & Troubleshooting",
+     title: t('faq.serviceTroubleshooting'),
       questions: [
-        {
-          question: "Why is my IPTV not working?",
-          answer: "Most issues are simple to fix. First, check your internet speed to ensure it's at least **30 Mbps** for HD content. If your connection is stable, try clearing your app's cache or restarting your device. If the issue persists, your subscription may have expired. Our dedicated support team is here to help you troubleshoot any problem."
-        },
-        {
-          question: "Can my internet provider block IPTV?",
-          answer: "In some regions, such as the **UK** or **Spain**, certain Internet Service Providers (ISPs) may throttle or block IPTV streams. To ensure a smooth, buffer-free viewing experience, we highly recommend using a **VPN**. A VPN helps you bypass these restrictions and protects your online privacy by encrypting your internet traffic."
-        },
-        {
-          question: "What internet speed do I need for IPTV?",
-          answer: "We recommend a stable internet connection of at least **30 Mbps** for seamless HD streaming. A faster connection is always better for optimal performance, especially if you have multiple devices connected."
-        }
+        { question: t('faq.notWorking'), answer: t('faq.notWorkingAnswer') },
+        { question: t('faq.ispBlock'), answer: t('faq.ispBlockAnswer') },
+        { question: t('faq.internetSpeed'), answer: t('faq.internetSpeedAnswer') }
       ]
     },
     {
-      title: "Account & Payments",
+       title: t('faq.accountPayments'),
       questions: [
-        {
-          question: "How do I get my service after payment?",
-          answer: "After you make a one-time payment, simply send us the receipt. Our team will instantly send you your credentials (**M3U link** or **Xtream Codes**) so you can activate your service immediately."
-        },
-        {
-          question: "What are Xtream Codes?",
-          answer: "**Xtream Codes** are a convenient set of login details (username, password, and a server URL) that many IPTV player apps use. We provide these codes as an alternative to an M3U link, giving you the flexibility to choose how you access our service."
-        }
+        { question: t('faq.getService'), answer: t('faq.getServiceAnswer') },
+        { question: t('faq.whatAreXtream'), answer: t('faq.whatAreXtreamAnswer') }
       ]
     },
     {
-      title: "Legal & Security",
+     title: t('faq.legalSecurity'),
       questions: [
-        {
-          question: "Is IPTV legal?",
-          answer: "The legality of IPTV services depends on the provider. As a **legitimate service**, GeniusTV operates within a legal framework. We prioritize the security of our customers and do not engage in the illegal distribution of content."
-        },
-        {
-          question: "Do I need a VPN to use GeniusTV?",
-          answer: "While not mandatory, we strongly recommend a **VPN**. It's the most effective way to protect your online privacy and avoid potential throttling from your Internet Service Provider."
-        }
+        { question: t('faq.isLegal'), answer: t('faq.isLegalAnswer') },
+        { question: t('faq.needVpn'), answer: t('faq.needVpnAnswer') }
       ]
     },
     {
-      title: "Privacy & Our IPTV Service",
+     title: t('faq.privacyService'),
       questions: [
-        {
-          question: "Does GeniusTV share my payment information?",
-          answer: "**No**. We do not handle or store any sensitive payment information. All transactions are managed by trusted third-party processors. We only keep a record of the payment proof you provide."
-        },
-        {
-          question: "Do you track my viewing history?",
-          answer: "**Absolutely not**. We do not monitor your viewing habits, the channels you watch, or any of your streaming activity. Your usage is private."
-        },
-        {
-          question: "Is my personal information secure with GeniusTV?",
-          answer: "Our best security measure is our **minimal data policy**. By not collecting personal data, we significantly reduce the risk of a data breach affecting your identity. The limited information we do hold is protected by standard security protocols."
-        },
-        {
-          question: "How does GeniusTV's data protection compare to other online services?",
-          answer: "Our commitment to **minimal data collection** sets us apart. We believe this is the most effective form of online privacy available, as we don't hold the sensitive information that other companies might."
-        }
+        { question: t('faq.sharePayment'), answer: t('faq.sharePaymentAnswer') },
+        { question: t('faq.trackViewing'), answer: t('faq.trackViewingAnswer') },
+        { question: t('faq.secureInfo'), answer: t('faq.secureInfoAnswer') },
+        { question: t('faq.dataProtection'), answer: t('faq.dataProtectionAnswer') }
       ]
     }
   ];

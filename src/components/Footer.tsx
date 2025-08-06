@@ -1,29 +1,30 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { openWhatsApp, openTelegram } from "@/services/socialService";
-const footerLinks = {
+const getFooterLinks = (t: (key: string) => string) => ({
   product: [
-    { label: "Apps", href: "/apps" },
-    { label: "Pricing", href: "/#pricing" },
-    { label: "Reseller", href: "/reseller" },
-    { label: "FAQ", href: "/faq" }
+    { label: t('nav.apps'), href: "/apps" },
+    { label: t('pricing.title'), href: "/#pricing" },
+    { label: t('nav.faq'), href: "/faq" },
+    { label: t('nav.reseller'), href: "/reseller" }
 
   ],
   support: [
-    { label: "Contact", href: "/contact" },
-    { label: "WhatsApp", href: openWhatsApp },
-    { label: "Telegram", href: openTelegram },
+    { label: t('nav.contact'), href: "/contact" },
+    { label: t('nav.whatsapp'), href: openWhatsApp },
+    { label: t('nav.telegram'), href: openTelegram },
     // { label: "Email Support", href: "mailto:support@geniustv.com" }
   ],
   company: [
-    { label: "About Us", href: "/about" },
-    { label: "Blog", href: "/blog" },
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Terms of Service", href: "/terms-of-service" }
+    { label: t('nav.aboutUs'), href: "/about" },
+    { label: t('nav.blog'), href: "/blog" },
+    { label: t('nav.privacy'), href: "/privacy-policy" },
+    { label: t('nav.terms'), href: "/terms-of-service" }
   ]
-};
+});
 
 export const Footer = () => {
   const { t } = useLanguage();
+    const footerLinks = getFooterLinks(t);
   return (
     <footer className="bg-section-gradient border-t border-border">
       {/* Support Section */}
@@ -85,13 +86,13 @@ export const Footer = () => {
               <span className="text-xl font-bold text-foreground">GeniusTV</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Premium IPTV service delivering stable, high-quality streaming to millions of users worldwide.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Product Links */}
           <div>
-            <h3 className="text-foreground font-semibold mb-4">Product</h3>
+            <h3 className="text-foreground font-semibold mb-4">{t('footer.product')}</h3>
             <ul className="space-y-2">
 
               {footerLinks.product.map((link, index) => (
@@ -109,7 +110,7 @@ export const Footer = () => {
 
           {/* Support Links */}
           <div>
-            <h3 className="text-foreground font-semibold mb-4">Support</h3>
+            <h3 className="text-foreground font-semibold mb-4">{t('footer.support')}</h3>
             <ul className="space-y-2">
                 <li>
                   <a 
@@ -140,7 +141,7 @@ export const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-foreground font-semibold mb-4">Company</h3>
+            <h3 className="text-foreground font-semibold mb-4">{t('footer.company')}</h3>
             <ul className="space-y-2">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
@@ -160,15 +161,15 @@ export const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-muted-foreground text-sm">
-              © 2024 GeniusTV. All rights reserved.
+                {t('footer.copyright')}
             </div>
             
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
-              <span>🔒 SSL Secured</span>
+              <span>🔒  {t('footer.sslSecured')}</span>
               <span>•</span>
-              <span>⚡ 99.9% Uptime</span>
+              <span>⚡ {t('infrastructure.uptime')}</span>
               <span>•</span>
-              <span>🌍 Global CDN</span>
+              <span>🌍 {t('footer.globalCdn')}</span>
             </div>
           </div>
         </div>

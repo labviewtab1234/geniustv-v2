@@ -3,56 +3,58 @@ import { Badge } from "@/components/ui/badge";
 import { CreditCard, Banknote, Bitcoin, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const paymentMethods = [
+const getPaymentMethods = (t: (key: string) => string) => [
   {
     name: "Card payment",
     logo: "/payement logos/eneba.png",
     icon: CreditCard,
-    description: "Credit & Debit Cards",
+    description: t('payment.enebaDesc'),
     recommended: true,
-    features: ["Instant payment", "Global acceptance", "Secure checkout"],
+    features:[t('payment.enebaFeature1'), t('payment.enebaFeature2'), t('payment.enebaFeature3')],
     dimension: "w-16 h-16"
   },
   {
     name: "Wise",
     logo: "/payement logos/wise.png",
     icon: Banknote,
-    description: "Bank Transfer",
+    description: t('payment.wiseDesc'),
     recommended: false,
-    features: ["Low fees", "Multi-currency", "Fast transfer"],
+    features:  [t('payment.wiseFeature1'), t('payment.wiseFeature2'), t('payment.wiseFeature3')],
     dimension: "w-16 h-16"
   },
   {
     name: "Crypto",
     logo: "/payement logos/crypto.png",
     icon: Bitcoin,
-    description: "Cryptocurrency",
+    description: t('payment.cryptoDesc'),
     recommended: false,
-    features: ["Bitcoin", "Ethereum", "Anonymous"],
+    features: [t('payment.cryptoFeature1'), t('payment.cryptoFeature2'), t('payment.cryptoFeature3')],
     dimension: "w-16 h-16"
   }
 ];
 
-const paymentSteps = [
+const getPaymentSteps = (t: (key: string) => string) => [
   {
     step: "1",
-    title: "Buy via Eneba / Wise / Crypto",
-    description: "Choose your preferred payment method"
+    title:  t('payment.step1Title'),
+    description: t('payment.step2Desc')
   },
   {
     step: "2",
-    title: "Send receipt (WhatsApp / Telegram)",
-    description: "Forward payment confirmation to our support"
+    title:  t('payment.step2Title'),
+    description: t('payment.step2Desc')
   },
   {
     step: "3",
-    title: "Get access in less than 5 minutes",
-    description: "Receive your login credentials instantly"
+    title: t('payment.step3Title'),
+    description: t('payment.step3Desc')
   }
 ];
 
 export const PaymentMethodsSection = () => {
   const { t } = useLanguage();
+   const paymentMethods = getPaymentMethods(t);
+  const paymentSteps = getPaymentSteps(t);
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
@@ -63,7 +65,7 @@ export const PaymentMethodsSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Multiple payment options for your convenience and security
+           {t('payment.subtitle')}
           </p>
         </div>
 
@@ -119,7 +121,7 @@ export const PaymentMethodsSection = () => {
         {/* Payment Process */}
         <div className="bg-card border border-border rounded-3xl p-8 max-w-5xl mx-auto">
           <h3 className="text-2xl font-bold text-foreground text-center mb-8">
-            How It Works
+                {t('payment.howItWorks')}
           </h3>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -152,7 +154,7 @@ export const PaymentMethodsSection = () => {
               <span className="font-semibold text-secondary">{t('payment.recommended')}</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Accepts all major credit & debit cards worldwide
+               {t('payment.acceptsCards')}
             </p>
           </div>
         </div>

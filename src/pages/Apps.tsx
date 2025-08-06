@@ -15,20 +15,20 @@ const Apps = () => {
       icon: <Smartphone className="h-8 w-8" />,
       apps: [
    
-        { name: "8k Player", description: "Our own IPTV player", recommended: true },
-        { name: "Ibo Player Pro", description: "Premium IPTV experience", recommended: true },
-        { name: "IPTV Stream Player", description: "Simple and reliable", recommended: false },
-        { name: "Perfect Player", description: "Simple and reliable", recommended: false }
+        { name: "8k Player", description:  t('apps.mostPopular'), recommended: true }, //"Our own IPTV player"
+        { name: "Ibo Player Pro", description:  t('apps.premiumExp'), recommended: true }, // "Premium IPTV experience"
+        { name: "IPTV Stream Player", description: t('apps.featureRich'), recommended: false }, // "Simple and reliable"
+        { name: "Perfect Player", description: t('apps.simpleReliable'), recommended: false } // "Simple and reliable"
       ]
     },
     {
       device: "iOS / Apple TV",
       icon: <Tablet className="h-8 w-8" />,
       apps: [
-        { name: "Ibo Player Pro", description: "Premium IPTV experience", recommended: true },
-        { name: "IPTVX", description: "The All-Round Champion", recommended: true },
-        { name: "Smarters Player", description: "The User-Friendly Workhorse", recommended: false },
-        { name: "IPTV Player Live", description: "100% free and solid", recommended: false }
+        { name: "Ibo Player Pro", description:  t('apps.bestIos'), recommended: true }, // "Premium IPTV experience"
+        { name: "IPTVX", description:  t('apps.cleanInterface'),recommended: true }, // "The All-Round Champion"
+        { name: "Smarters Player", description:  t('apps.simpleEffective'), recommended: false }, // "The User-Friendly Workhorse"
+        { name: "IPTV Player Live", description:  t('apps.multiFormat'), recommended: false } // "100% free and solid"
       ]
     },
     {
@@ -66,23 +66,23 @@ const Apps = () => {
   const setupSteps = [
     {
       step: 1,
-      title: "Download the App",
-      description: "Install your chosen IPTV app from the official app store"
+      title: t('apps.step1'),
+      description: t('apps.step1Desc')
     },
     {
       step: 2,
-      title: "Get Your Credentials",
-      description: "Receive M3U URL or XTREAM codes from GeniusTV after subscription"
+      title: t('apps.step2'),
+      description: t('apps.step2Desc')
     },
     {
       step: 3,
-      title: "Configure the App",
-      description: "Enter your credentials and configure player settings"
+      title: t('apps.step3'),
+      description: t('apps.step3Desc')
     },
     {
       step: 4,
-      title: "Start Streaming",
-      description: "Enjoy 35,000+ channels with premium quality"
+      title: t('apps.step4'),
+      description: t('apps.step4Desc')
     }
   ];
 
@@ -156,26 +156,26 @@ const Apps = () => {
           {/* Pro Tips */}
           <Card className="mb-16">
             <CardHeader>
-              <CardTitle>Pro Tips for Better Streaming</CardTitle>
+                <CardTitle>{t('apps.proTips')}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold mb-2">Optimize Video Quality</h4>
+                  <h4 className="font-semibold mb-2">{t('apps.optimizeVideo')}</h4>
                   <ul className="space-y-1 text-sm text-muted-foreground">
-                    <li>• Use wired connection when possible</li>
-                    <li>• Enable hardware acceleration</li>
-                    <li>• Choose optimal video decoder</li>
-                    <li>• Adjust buffer size for your connection</li>
+                    <li>• {t('apps.wiredConnection')}</li>
+                    <li>• {t('apps.hardwareAcceleration')}</li>
+                    <li>• {t('apps.videoDecoder')}</li>
+                    <li>• {t('apps.bufferSize')}</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Reduce Buffering</h4>
+                  <h4 className="font-semibold mb-2">{t('apps.reduceBuffering')}</h4>
                   <ul className="space-y-1 text-sm text-muted-foreground">
-                    <li>• Close background apps</li>
-                    <li>• Use 5GHz WiFi when available</li>
-                    <li>• Clear app cache regularly</li>
-                    <li>• Choose nearest server location</li>
+                   <li>• {t('apps.closeApps')}</li>
+                    <li>• {t('apps.use5ghz')}</li>
+                    <li>• {t('apps.clearCache')}</li>
+                    <li>• {t('apps.nearestServer')}</li>
                   </ul>
                 </div>
               </div>
@@ -186,13 +186,13 @@ const Apps = () => {
           <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
             <CardContent className="text-center py-12">
               <Download className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h2 className="text-2xl font-bold mb-4">Ready to Start Streaming?</h2>
+             <h2 className="text-2xl font-bold mb-4">{t('apps.readyToStart')}</h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Choose your subscription plan and get instant access to all IPTV apps and setup guides
+                   {t('apps.readyDesc')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg">View Pricing Plans</Button>
-                <Button variant="outline" size="lg">Talk to an agent now</Button>
+                <Button size="lg">{t('apps.viewPricing')}</Button>
+              <Button variant="outline" size="lg">{t('apps.contactSupport')}</Button>
               </div>
             </CardContent>
           </Card>
