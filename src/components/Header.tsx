@@ -94,6 +94,34 @@ export const Header = () => {
             </Button> */}
           </div>
 
+          <div className="md:hidden">
+            <DropdownMenu >
+              <DropdownMenuTrigger asChild>
+                <Button variant="outline" className="w-full justify-between">
+                  <div className="flex items-center">
+                    <Globe className="w-4 h-4 mr-2" />
+                    {/*<span className="mr-2">{currentLanguage.flag}</span>*/}
+                    {currentLanguage.code}
+                  </div>
+                  <ChevronDown className="w-4 h-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-full">
+                {languages.map((lang) => (
+                    <DropdownMenuItem
+                        key={lang.code}
+                        onClick={() => setLanguage(lang.code as Language)}
+                        className="cursor-pointer"
+                    >
+                      <span className="mr-2">{lang.flag}</span>
+                      {lang.name}
+                    </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
+
+
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
@@ -122,38 +150,18 @@ export const Header = () => {
               </a>
             ))}
             <div className="pt-4 border-t border-border">
-              <Button className="w-full bg-primary hover:bg-primary/90 mb-4">
-                {t('header.startNow')}
-              </Button>
+              {/*<Button className="w-full bg-primary hover:bg-primary/90 mb-4">*/}
+              {/*  {t('header.startNow')}*/}
+              {/*</Button>*/}
               
               {/* Mobile Language Selector */}
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="outline" className="w-full justify-between">
-                    <div className="flex items-center">
-                      <Globe className="w-4 h-4 mr-2" />
-                      <span className="mr-2">{currentLanguage.flag}</span>
-                      {currentLanguage.name}
-                    </div>
-                    <ChevronDown className="w-4 h-4" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-full">
-                  {languages.map((lang) => (
-                    <DropdownMenuItem
-                      key={lang.code}
-                      onClick={() => setLanguage(lang.code as Language)}
-                      className="cursor-pointer"
-                    >
-                      <span className="mr-2">{lang.flag}</span>
-                      {lang.name}
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
+
             </div>
+
+
           </div>
         )}
+
       </div>
     </header>
   );
