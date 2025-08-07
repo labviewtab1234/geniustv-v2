@@ -16,7 +16,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-100 min-h-[100vh] sm:flex sm:items-center 
+    <section className="relative w-full min-h-screen sm:flex sm:items-center 
          justify-center bg-hero-gradient overflow-hidden
           bg-[url('/mobile-background.png')] 
          sm:bg-[url('/background.png')] 
