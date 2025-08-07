@@ -128,7 +128,7 @@ All colors MUST be HSL.
 }
 
 .animate-logos-marquee {
-  animation: logos-marquee 45s linear infinite;
+  animation: logos-marquee 8s linear infinite;
 }
 
 .scrollbar-hide {
