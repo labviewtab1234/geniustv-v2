@@ -21,13 +21,7 @@ export const HeroSection = () => {
           bg-[url('/mobile-background.png')] 
          sm:bg-[url('/background.png')] 
            bg-cover bg-center bg-no-repeat
-         "
-      style={{
-        // backgroundImage: `url('/background.png'), var(--hero-gradient)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}>
+         ">
 
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-center mt-[60px] md:hidden ">
         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
