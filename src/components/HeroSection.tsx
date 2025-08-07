@@ -3,25 +3,32 @@ import { MessageCircle, Play, MessageSquare } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
 import { FloatingSocialButtons } from "./FloatingSocialButtons";
+import { useEffect, useState } from "react";
 
 export const HeroSection = () => {
   const { t } = useLanguage();
   const navigate = useNavigate();
+  const [isMobile, setIsMobile] = useState(false);
 
-  const openWhatsApp = () => {
-    const phoneNumber = "+33644657615";
-    const message = "Hello, I would like to receive more information about your services..";
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
 
+    useEffect(() => {
+    const checkScreen = () => setIsMobile(window.innerWidth < 640);
+    checkScreen();
+    window.addEventListener('resize', checkScreen);
+    return () => window.removeEventListener('resize', checkScreen);
+  }, []);
   return (
     <section className="relative w-full min-h-screen sm:flex sm:items-center 
          justify-center bg-hero-gradient overflow-hidden
-          bg-[url('/mobile-background.png')] 
-         sm:bg-[url('/background.png')] 
            bg-cover bg-center bg-no-repeat
-         ">
+         "
+               style={{
+        backgroundImage: `url('${isMobile ? '/mobile-background.png' : '/background.png'}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+         >
 
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-center mt-[60px] md:hidden ">
         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
