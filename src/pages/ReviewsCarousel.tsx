@@ -163,7 +163,7 @@ const ReviewsCarousel: React.FC<CustomerReviewsCarouselProps> = ({
           onClick={scrollNext}
           disabled={!canScrollNext}
           className={cn(
-            'absolute top-1/2 -translate-y-1/2 z-10',
+            'absolute right-0 top-1/2 -translate-y-1/2 z-10',
             'w-12 h-12',
             'flex items-center justify-center',
             'transition-all duration-300',
@@ -171,6 +171,9 @@ const ReviewsCarousel: React.FC<CustomerReviewsCarouselProps> = ({
             'disabled:opacity-50 disabled:cursor-not-allowed',
             'hidden md:flex'
           )}
+                    style={{
+            color: '#25d366',
+          }}
         >
           <ChevronRight className="w-7 h-7" />
         </button>
