@@ -1,12 +1,12 @@
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { InfrastructureSection } from "@/components/InfrastructureSection";
 import { PricingSection } from "@/components/PricingSection";
 import { PaymentMethodsSection } from "@/components/PaymentMethodsSection";
 import { Footer } from "@/components/Footer";
 import { LogoCarousel } from "@/components/LogosCarousel";
 import { PostersCarousel } from "@/components/postersCarousel";
+import ReviewsCarousel from "./ReviewsCarousel";
 
 const Index = () => {
   return (
@@ -16,7 +16,8 @@ const Index = () => {
         <HeroSection />
          <LogoCarousel />
          <PostersCarousel />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
+        <ReviewsCarousel />
         <InfrastructureSection />
         <PricingSection />
         <PaymentMethodsSection />
