@@ -6,9 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Smartphone, Tv, Monitor, Tablet, Download } from "lucide-react";
 import { FloatingSocialButtons } from "@/components/FloatingSocialButtons";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useNavigate } from "react-router-dom";
+import { set } from "date-fns";
 
 const Apps = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const deviceApps = [
     {
       device: "Android",
@@ -191,8 +194,18 @@ const Apps = () => {
                    {t('apps.readyDesc')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg">{t('apps.viewPricing')}</Button>
-              <Button variant="outline" size="lg">{t('apps.contactSupport')}</Button>
+                <Button size="lg" onClick={() => {
+                  navigate("/");
+                  setTimeout(() => {
+                            const pricingSection = document.getElementById('pricing-section');
+                  if (pricingSection) {
+                    pricingSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                  }, 300); // Adjust delay as needed
+                  // Smooth scroll to pricing section   
+        
+                }}>{t('apps.viewPricing')}</Button>
+              <Button variant="outline" size="lg"  onClick={() => {navigate("/contact");    window.scrollTo(0, 0); }}>{t('apps.contactSupport')}</Button>
               </div>
             </CardContent>
           </Card>

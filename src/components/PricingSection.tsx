@@ -233,13 +233,13 @@ export const PricingSection = () => {
    const navigate = useNavigate();
    
   return (
-    <section id="pricing-section" className="py-20 bg-section-gradient">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-20 bg-section-gradient">
+      <div className="container mx-auto px-4 lg:px-8"  id="pricing-section">
         <div className="text-center mb-20 full-width flex flex-col items-center">
            <img src="/all_devices.png" alt="All devices supported" />
         </div>
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-16" >
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4" >
             Choose Your{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Perfect Plan
