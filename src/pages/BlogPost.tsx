@@ -825,7 +825,7 @@ This isn't just another guide; it's your definitive roadmap to finding the best 
               </div>
 
               {/* Featured Image */}
-              <div className="aspect-video mb-8" style={{ aspectRatio: "18/18" }}>
+              <div className="aspect-video mb-8">
                 <img
                   src={currentPost.image}
                   alt={currentPost.title}
