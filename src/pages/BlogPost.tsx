@@ -191,7 +191,7 @@ This isn't just another guide; it's your definitive roadmap to finding the best 
     Don't let outdated viewing methods hold you back in 2025. It's time to experience entertainment on your terms – buffer-free, high-quality, and truly affordable.
   </p>
 
-  <p class="mt-4">
+  <p class="mt-4 full-width text-center mt-8">
     <a href="/contact" class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded hover:bg-blue-700">
       Start Your Free IPTV Trial Today & Explore Our Plans!
     </a>
