@@ -11,8 +11,10 @@ import ReviewsCarousel from "./ReviewsCarousel";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
-      <Header />
-      <main>
+       <div className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm ">
+        <Header />
+      </div>
+      <main className=" mt-16">
         <HeroSection />
          <LogoCarousel />
          <PostersCarousel />
