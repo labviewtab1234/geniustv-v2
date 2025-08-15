@@ -20,16 +20,16 @@ const Blog = () => {
       featured: true,
       slug: "best-iptv-service-2025"
     },
-    // {
-    //   title: "Complete Guide: Setting Up IPTV on Smart TVs",
-    //   excerpt: "Step-by-step instructions for configuring IPTV services on all major Smart TV brands including Samsung, LG, Sony, and more.",
-    //   image: "/placeholder.svg",
-    //   date: "January 12, 2025",
-    //   readTime: "8 min read",
-    //   category: "Tutorial",
-    //   featured: false,
-    //   slug: "smart-tv-setup-guide"
-    // },
+    {
+      title: "Watch UEFA Champions League & Premier League Live: The Ultimate 4K IPTV Football Experience (Cable-Free!)",
+      excerpt: "Are You Missing the Thrill of Top-Tier Football? Ditch Cable, Embrace IPTV!",
+      image: "/blogs/blog2.png",
+      date: "January 12, 2025",
+      readTime: "8 min read",
+      category: "Technology",
+      featured: false,
+      slug: "ultimate-iptv-football-experience"
+    },
     // {
     //   title: "Comparing IPTV vs Cable TV: Cost, Quality & Features",
     //   excerpt: "An in-depth comparison of IPTV services versus traditional cable television, covering pricing, channel selection, and streaming quality.",

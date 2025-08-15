@@ -80,10 +80,11 @@ export const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">G</span>
-              </div>
-              <span className="text-xl font-bold text-foreground">GeniusTV</span>
+              <a href="/">
+             <img src="/logo_footer.png" alt="GeniusTV Logo"
+              width={180} height={80}  />
+              </a>
+
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {t('footer.description')}

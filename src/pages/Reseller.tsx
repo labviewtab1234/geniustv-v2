@@ -6,9 +6,11 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Users, DollarSign, Headphones, Zap } from "lucide-react";
 import { FloatingSocialButtons } from "@/components/FloatingSocialButtons";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useNavigate } from "react-router-dom";
 
 const Reseller = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const resellerPacks = [
     {
       credits: 120,
@@ -116,7 +118,7 @@ const Reseller = () => {
                            <span className="text-sm">{t('reseller.mgmtTools')}</span>
                       </div>
                     </div>
-                    <Button className="w-full" variant={pack.popular ? "default" : "outline"}>
+                    <Button className="w-full" variant={pack.popular ? "default" : "outline"} onClick={() => { navigate("/contact"); window.scrollTo(0, 0); }}>
                         {t('reseller.buyNow')}
                     </Button>
                   </CardContent>
@@ -161,8 +163,7 @@ const Reseller = () => {
                          {t('reseller.readyDesc')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg">{t('footer.resellerInfo')}</Button>
-                <Button variant="outline" size="lg">{t('reseller.contactUs')}</Button>
+                <Button variant="outline" size="lg" onClick={() => {navigate("/contact"); window.scrollTo(0, 0); }}>{t('reseller.contactUs')}</Button>
               </div>
             </CardContent>
           </Card>
