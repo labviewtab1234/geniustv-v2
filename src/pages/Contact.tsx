@@ -10,22 +10,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { FloatingSocialButtons } from "@/components/FloatingSocialButtons";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-
+import { openWhatsApp, openTelegram } from "@/services/socialService";
 const Contact = () => {
   const { t } = useLanguage();
-  const openWhatsApp = () => {
-    const phoneNumber = "+33644657615"; // Format international sans espaces
-    const message = "Hello, I would like to receive more information about your services..";
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
-
-  const openTelegram = () => {
-    const telegramUsername = "genuistv";
-    const message = "Hello, I would like to receive more information about your services..";
-    const telegramUrl = `https://t.me/${telegramUsername}?text=${encodeURIComponent(message)}`;
-    window.open(telegramUrl, '_blank');
-  };
 
   // Ajoute l'état pour les champs du formulaire
   const [form, setForm] = useState({
