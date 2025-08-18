@@ -25,7 +25,7 @@ const pricingPlansByTab = {
     },
     {
       title: "3 Months",
-      price: "$30",
+      price: "$35",
       period: "3 months",
       popular: false,
       originalPrice: "$45",
@@ -61,7 +61,7 @@ const pricingPlansByTab = {
     },
     {
       title: "12 Months",
-      price: "$85",
+      price: "$75",
       period: "year",
       popular: true,
       originalPrice: "$110",
@@ -95,7 +95,7 @@ const pricingPlansByTab = {
     },
     {
       title: "3 Months",
-      price: "$50",
+      price: "$60",
       period: "3 months",
       popular: false,
       originalPrice: "$90",
@@ -131,7 +131,7 @@ const pricingPlansByTab = {
     },
     {
       title: "12 Months",
-      price: "$150",
+      price: "$125",
       period: "year",
       popular: true,
       originalPrice: "$210",
@@ -166,7 +166,7 @@ const pricingPlansByTab = {
     },
     {
       title: "3 Months",
-      price: "$75",
+      price: "$85",
       period: "3 months",
       popular: false,
       originalPrice: "$110",
@@ -202,7 +202,7 @@ const pricingPlansByTab = {
     },
     {
       title: "12 Months",
-      price: "$200",
+      price: "$175",
       period: "year",
       popular: true,
       originalPrice: "$280",
