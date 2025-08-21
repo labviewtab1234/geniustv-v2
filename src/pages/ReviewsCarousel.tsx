@@ -172,7 +172,7 @@ const ReviewsCarousel: React.FC<CustomerReviewsCarouselProps> = ({
             'disabled:opacity-50 disabled:cursor-not-allowed',
             'hidden md:flex'
           )}
-                    style={{
+           style={{
             color: '#25d366',
           }}
         >
