@@ -30,7 +30,7 @@ export const HeroSection = () => {
       }}
          >
 
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-center mt-[60px] md:hidden ">
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-center mt-[60px] md:hidden "  data-aos="fade-up" >
         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           {t('hero.title')}
         </span>
@@ -53,22 +53,24 @@ export const HeroSection = () => {
 
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 " style={{ marginTop: '100px' }}>
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center" >
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 hidden sm:block">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 hidden sm:block" data-aos="fade-up">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               {t('hero.title')}
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed mt-[55%] sm:mt-0">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed mt-[55%] sm:mt-0" data-aos="fade-up" data-aos-delay="400">
             {t('hero.subtitle')}
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button
+             data-aos="fade-right"
+             data-aos-delay="700"
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold shadow-tech-glow hover:shadow-lg transition-all duration-300 hover:scale-105"
               onClick={() => {
@@ -83,6 +85,8 @@ export const HeroSection = () => {
             </Button>
 
             <Button
+            data-aos="fade-left"
+             data-aos-delay="700"
               variant="outline"
               size="lg"
               className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105"
@@ -94,7 +98,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center items-center gap-8 text-muted-foreground">
+          <div className="flex flex-wrap justify-center items-center gap-8 text-muted-foreground" data-aos="fade-up" data-aos-delay="1000">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
               <span className="text-sm font-medium">99.9% {t('infrastructure.uptime')}</span>

@@ -15,10 +15,25 @@ import About from "./pages/About";
 import BlogPost from "./pages/BlogPost";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfServices";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const queryClient = new QueryClient();
 
-const App = () => (
+
+
+const App = () =>  {
+      useEffect(() => {
+    AOS.init({
+      duration: 1000, // durée de l'animation en ms
+      easing: 'ease-in-out', // type d'easing
+      once: true, // animation une seule fois
+      mirror: false, // ne pas répéter en scrollant vers le haut
+    });
+  }, []);
+
+  return (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <LanguageProvider>
@@ -43,6 +58,10 @@ const App = () => (
       </LanguageProvider>
     </TooltipProvider>
   </QueryClientProvider>
-);
+  )
+}
+  
+
+
 
 export default App;

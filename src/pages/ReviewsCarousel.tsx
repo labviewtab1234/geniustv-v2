@@ -73,7 +73,6 @@ const ReviewsCarousel: React.FC<CustomerReviewsCarouselProps> = ({
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
     const currentIndex = emblaApi.selectedScrollSnap();
-    console.log('Current selected index:', currentIndex); // Debug log
     setSelectedIndex(currentIndex);
     setCanScrollPrev(emblaApi.canScrollPrev());
     setCanScrollNext(emblaApi.canScrollNext());
@@ -98,12 +97,14 @@ const ReviewsCarousel: React.FC<CustomerReviewsCarouselProps> = ({
     <div className={cn('w-full max-w-7xl mx-auto px-4', className)}>
       {/* Section Header */}
       <div className="text-center  mb-12 mt-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4" 
+            data-aos="fade-up" data-aos-delay="200">
           <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             {t('testimonials.title')}
           </span>
         </h2>
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto" 
+        data-aos="fade-up" data-aos-delay="400">
           {/* Real feedback from real customers using GeniusTV every day */}
           {t('testimonials.subtitle')}
         </p>
@@ -111,7 +112,7 @@ const ReviewsCarousel: React.FC<CustomerReviewsCarouselProps> = ({
 
 
       {/* Carousel Container */}
-      <div className="relative">
+      <div className="relative" data-aos="fade-up" data-aos-delay="600">
         {/* Embla Viewport */}
         <div
           ref={emblaRef}

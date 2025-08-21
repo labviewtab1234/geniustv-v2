@@ -59,12 +59,15 @@ export const PaymentMethodsSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4"
+                        data-aos="fade-up">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               {t('payment.title')}
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="300">
            {t('payment.subtitle')}
           </p>
         </div>
@@ -75,6 +78,8 @@ export const PaymentMethodsSection = () => {
             const IconComponent = method.icon;
             return (
               <Card
+                            data-aos="fade-left"
+              data-aos-delay={index * 200}
                 key={index}
                 className={`bg-card border-border hover:bg-card-hover transition-all duration-300 hover:scale-105 relative ${method.recommended ? 'border-primary shadow-tech-glow' : ''
                   }`}
@@ -126,7 +131,9 @@ export const PaymentMethodsSection = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {paymentSteps.map((step, index) => (
-              <div key={index} className="text-center relative">
+              <div key={index} className="text-center relative"
+                                          data-aos="fade-left"
+              data-aos-delay={index * 200}>
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-primary-foreground font-bold text-lg">
                     {step.step}
@@ -148,7 +155,8 @@ export const PaymentMethodsSection = () => {
             ))}
           </div>
 
-          <div className="text-center mt-8 p-4 bg-secondary/10 rounded-xl">
+          <div className="text-center mt-8 p-4 bg-secondary/10 rounded-xl"
+              data-aos="fade-up">
             <div className="flex items-center justify-center gap-2 mb-2">
               <CreditCard className="w-5 h-5 text-secondary" />
               <span className="font-semibold text-secondary">{t('payment.recommended')}</span>

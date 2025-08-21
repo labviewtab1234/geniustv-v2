@@ -13,6 +13,7 @@ const pricingPlansByTab = {
       price: "$15",
       period: "month",
       popular: false,
+      animation: "fade-right",
       features: [
         "1 Device",
         "35K+ Live Channels",
@@ -30,6 +31,7 @@ const pricingPlansByTab = {
       popular: false,
       originalPrice: "$45",
       savings: "Save $15",
+      animation: "fade-right",
       features: [
         "35K+ Live Channels",
         "VOD Movies & Series",
@@ -47,6 +49,7 @@ const pricingPlansByTab = {
       popular: false,
       originalPrice: "$70",
       savings: "Save $20",
+      animation: "fade-left",
       // badge: "Best Deal",
       features: [
         "35K+ Live Channels",
@@ -66,6 +69,7 @@ const pricingPlansByTab = {
       popular: true,
       originalPrice: "$110",
       savings: "Save $95",
+      animation: "fade-left",
       features: [
         "35K+ Live Channels",
         "VOD Movies & Series",
@@ -235,7 +239,8 @@ export const PricingSection = () => {
   return (
     <section className="py-20 bg-section-gradient">
       <div className="container mx-auto px-4 lg:px-8"  id="pricing-section">
-        <div className="text-center mb-20 full-width flex flex-col items-center">
+        <div className="text-center mb-20 full-width flex flex-col items-center"
+        data-aos="fade-up" >
            <img src="/all_devices.png" alt="All devices supported" />
         </div>
         <div className="text-center mb-16" >
@@ -252,7 +257,7 @@ export const PricingSection = () => {
 
         {/* Tabs */}
         <div className="flex justify-center gap-4 mb-16">
-          {pricingTabs.map(tab => (
+          {pricingTabs.map((tab,index) => (
             <button
               key={tab.key}
               className={`px-6 py-2 rounded-full font-semibold transition-all duration-200
@@ -260,6 +265,8 @@ export const PricingSection = () => {
                   ? "bg-primary text-primary-foreground shadow"
                   : "bg-card text-foreground hover:bg-primary/10"}`}
               onClick={() => setSelectedTab(tab.key)}
+              data-aos="fade-left"
+              data-aos-delay={index * 100}
             >
               {tab.label}
             </button>
@@ -270,6 +277,7 @@ export const PricingSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
            {pricingPlansByTab[selectedTab].map((plan, index) => (
             <Card
+              data-aos={plan.animation}
               key={index}
               className={`relative bg-card border-border hover:bg-card-hover transition-all duration-300 hover:scale-105 ${plan.popular ? 'border-primary shadow-tech-glow lg:scale-105' : ''
                 }`}
@@ -345,7 +353,8 @@ export const PricingSection = () => {
 
         {/* Payment Info */}
         <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4" style={{color:'#00FFCC'}}>
+          <p className="text-muted-foreground mb-4" style={{color:'#00FFCC'}}
+                        data-aos="fade-down">
             Secure payment processing • Instant activation • 24/7 support
           </p>
           <div className="flex justify-center items-center gap-4 text-sm text-muted-foreground">
