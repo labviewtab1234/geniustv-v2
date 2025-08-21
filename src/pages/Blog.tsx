@@ -13,7 +13,7 @@ const Blog = () => {
     {
       title: "Best IPTV Service 2025: Your Ultimate Guide to Uninterrupted 4K Streaming & Live TV Without Cable",
       excerpt: "Tired of Sky-High Cable Bills? Welcome to the Future of TV!",
-      image: "/blogs/blog1.png",
+      image: "/blogs/Best-IPTV-Service-2025.png",
       date: "January 15, 2025",
       readTime: "5 min read",
       category: "Technology",
@@ -23,12 +23,21 @@ const Blog = () => {
     {
       title: "Watch UEFA Champions League & Premier League Live: The Ultimate 4K IPTV Football Experience (Cable-Free!)",
       excerpt: "Are You Missing the Thrill of Top-Tier Football? Ditch Cable, Embrace IPTV!",
-      image: "/blogs/blog2.png",
+      image: "/blogs/UEFA-Champions-League.png",
       date: "January 12, 2025",
       readTime: "8 min read",
       category: "Technology",
       featured: false,
       slug: "ultimate-iptv-football-experience"
+    },
+      {
+   title: "IPTV Buffering Fix: How to Get Smooth 4K Streams on Your Firestick & Smart TV",
+      excerpt: "Frustrated by constant buffering? This comprehensive troubleshooting guide provides actionable steps to ensure smooth 4K streams every time on your Firestick and Smart TV.",
+      image: "/blogs/4K-streaming.png",
+      date: "January 20, 2025",
+      readTime: "12 min read",
+      category: "Technology",
+      slug: "flawless-4k-streaming-guide"
     },
     // {
     //   title: "Comparing IPTV vs Cable TV: Cost, Quality & Features",
