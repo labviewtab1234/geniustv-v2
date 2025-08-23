@@ -40,11 +40,6 @@ export const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="flex items-center space-x-2">
-              {/* Placeholder for logo - will be replaced when logo is provided */}
-              {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">G</span>
-              </div>
-              <span className="text-xl font-bold text-foreground">GeniusTV</span> */}
               <img src="/logo.png" alt="GeniusTV Logo"
               width={180} height={140} />
             </a>

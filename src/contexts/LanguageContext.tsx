@@ -1,17 +1,26 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-
+import { footerContent } from './FooterContent';
 export type Language = 'en' | 'es' | 'fr' | 'it' | 'de' | 'ar';
 
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+    dir: 'ltr' | 'rtl'; 
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+// Créer le contexte avec une valeur par défaut
+const LanguageContext = createContext<LanguageContextType>({
+  language: 'en',
+  setLanguage: () => {},
+  t: () => '',
+  dir: 'ltr'
+});
 
 const translations: Record<Language, Record<string, string>> = {
   en: {
+    //Footer
+      ...footerContent.en,
     // Header
     'nav.home': 'Home',
     'nav.apps': 'Apps',
@@ -322,6 +331,8 @@ const translations: Record<Language, Record<string, string>> = {
     'reseller.mgmtTools': 'Customer management tools',
   },
   es: {
+    // footer
+      ...footerContent.es,
     // Header
     'nav.home': 'Inicio',
     'nav.apps': 'Apps',
@@ -633,6 +644,8 @@ const translations: Record<Language, Record<string, string>> = {
     'reseller.contactUs': 'Contactar Equipo de Revendedores',
   },
   fr: {
+    // footer
+    ...footerContent.fr,
     // Header
     'nav.home': 'Accueil',
     'nav.apps': 'Applications',
@@ -865,6 +878,8 @@ const translations: Record<Language, Record<string, string>> = {
     'reseller.contactUs': 'Contacter l\'Équipe Revendeurs',
   },
   it: {
+    // footer
+    ...footerContent.it,
     // Header
     'nav.home': 'Home',
     'nav.apps': 'App',
@@ -1097,6 +1112,8 @@ const translations: Record<Language, Record<string, string>> = {
 
   },
   de: {
+    // footer
+    ...footerContent.de,
     // Header
     'nav.home': 'Startseite',
     'nav.apps': 'Anwendungen',
@@ -1332,6 +1349,8 @@ const translations: Record<Language, Record<string, string>> = {
 
   },
   ar: {
+    // footer
+    ...footerContent.ar,
     // Header
     'nav.home': 'الرئيسية',
     'nav.apps': 'التطبيقات',
@@ -1567,7 +1586,7 @@ const translations: Record<Language, Record<string, string>> = {
 };
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
- const [language, setLanguage] = useState<Language>(() => {
+  const [language, setLanguage] = useState<Language>(() => {
     // Initialize from localStorage or default to 'en'
     if (typeof window !== 'undefined') {
       const savedLanguage = localStorage.getItem('userLanguage') as Language;
@@ -1576,17 +1595,20 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     return 'en';
   });
 
+
+  const dir = language === 'ar' ? 'rtl' : 'ltr';
+
+   const t = (key: string): string => {
+    return translations[language][key] || translations.en[key] || key;
+  };
+
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
     localStorage.setItem('userLanguage', lang);
   };
 
-  const t = (key: string): string => {
-    return translations[language][key] || translations.en[key] || key;
-  };
-
   return (
-   <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
+   <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t,dir }}>
       <div className={language === 'ar' ? 'rtl' : 'ltr'}>
         {children}
       </div>
@@ -1594,9 +1616,10 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   );
 };
 
-export const useLanguage = (): LanguageContextType => {
+// Hook personnalisé pour utiliser le contexte
+export const useLanguage = () => {
   const context = useContext(LanguageContext);
-  if (context === undefined) {
+  if (!context) {
     throw new Error('useLanguage must be used within a LanguageProvider');
   }
   return context;
