@@ -6,7 +6,7 @@ export function openWhatsApp() {
 };
 
 export function openTelegram() {
-    const telegramUsername = "genuistv";
+    const telegramUsername = "geniustvstore";
     const message = "Hello, I want free trial please.";
     const telegramUrl = `https://t.me/${telegramUsername}?text=${encodeURIComponent(message)}`;
     window.open(telegramUrl, '_blank');
