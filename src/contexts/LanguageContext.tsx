@@ -34,7 +34,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Stable, fast, and uninterrupted streaming.',
     'hero.subtitle': 'Thousands of live channels and on-demand content. Works on Smart TV, PC, and mobile. Get access in minutes.',
     'hero.startFrom': 'Start now from $15',
-    'hero.whatsapp': 'Talk to an agent now',
+    'hero.whatsapp': 'Free trial',
 
     // Testimonials
     'testimonials.title': "Don't Trust Our Word. Trust Our Customers.",
@@ -346,7 +346,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Streaming estable, rápido e ininterrumpido.',
     'hero.subtitle': 'Miles de canales en vivo y contenido bajo demanda. Funciona en Smart TV, PC y móvil. Obtén acceso en minutos.',
     'hero.startFrom': 'Comenzar desde $15',
-    'hero.whatsapp': 'Hablar con un agente ahora',
+    'hero.whatsapp': 'Prueba gratuita',
 
     // Testimonials
     'testimonials.title': 'No confíes en nuestra palabra. Confía en nuestros clientes.',
@@ -659,7 +659,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Streaming stable, rapide et ininterrompu.',
     'hero.subtitle': 'Des milliers de chaînes en direct et de contenu à la demande. Fonctionne sur Smart TV, PC et mobile. Accès en quelques minutes.',
     'hero.startFrom': 'Commencer à partir de 15$',
-    'hero.whatsapp': 'Parler à un agent maintenant',
+    'hero.whatsapp': 'Essai gratuit',
 
     // Testimonials
     'testimonials.title': 'Ne nous croyez pas sur parole. Faites confiance à nos clients.',
@@ -893,7 +893,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Streaming stabile, veloce e ininterrotto.',
     'hero.subtitle': 'Migliaia di canali live e contenuti on-demand. Funziona su Smart TV, PC e mobile. Accesso in pochi minuti.',
     'hero.startFrom': 'Inizia da $15',
-    'hero.whatsapp': 'Parla con un agente ora',
+    'hero.whatsapp': 'Prova gratuita',
 
     // Add more Italian translations...
 
@@ -1127,7 +1127,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Stabiles, schnelles und ununterbrochenes Streaming.',
     'hero.subtitle': 'Tausende von Live-Kanälen und On-Demand-Inhalten. Funktioniert auf Smart TV, PC und Handy. Zugang in Minuten.',
     'hero.startFrom': 'Ab $15 starten',
-    'hero.whatsapp': 'Jetzt mit einem Agenten sprechen',
+    'hero.whatsapp': 'Kostenlose Testversion',
 
     // Add more German translations...
 
@@ -1364,7 +1364,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'بث مستقر وسريع وغير منقطع.',
     'hero.subtitle': 'آلاف القنوات المباشرة والمحتوى عند الطلب. يعمل على التلفزيون الذكي والكمبيوتر والهاتف المحمول. احصل على الوصول في دقائق.',
     'hero.startFrom': 'ابدأ من 15 دولار',
-    'hero.whatsapp': 'تحدث مع وكيل الآن',
+    'hero.whatsapp': 'تجربة مجانية',
 
     // Add more Arabic translations...
 
