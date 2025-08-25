@@ -265,8 +265,6 @@ export const PricingSection = () => {
                   ? "bg-primary text-primary-foreground shadow"
                   : "bg-card text-foreground hover:bg-primary/10"}`}
               onClick={() => setSelectedTab(tab.key)}
-              data-aos="fade-left"
-              data-aos-delay={index * 100}
             >
               {tab.label}
             </button>
