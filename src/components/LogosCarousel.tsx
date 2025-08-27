@@ -64,7 +64,7 @@ export const LogoCarousel = () => {
         <div className="w-full h-full overflow-hidden flex items-center bg-background/80 py-4 md:py-8 lg:py-12">
             <div
                 ref={containerRef}
-                className="flex animate-logos-marquee overflow-x-auto scrollbar-hide cursor-grab select-none"
+                className="flex animate-scroll overflow-x-auto scrollbar-hide cursor-grab select-none"
                 style={{
                     minWidth: "200%",
                     scrollbarWidth: "none",
@@ -87,6 +87,30 @@ export const LogoCarousel = () => {
                     </div>
                 ))}
             </div>
+            
+                  <style>{`
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-${(logos.length * 300)}px);
+                    }
+                }
+
+                .animate-scroll {
+                    animation: scroll 20s linear infinite;
+                }
+
+                /* Masquer les barres de défilement */
+                .scrollbar-hide {
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                }
+                .scrollbar-hide::-webkit-scrollbar {
+                    display: none;
+                }
+            `}</style>
         </div>
     );
 };
