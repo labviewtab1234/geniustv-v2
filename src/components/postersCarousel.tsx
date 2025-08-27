@@ -180,12 +180,12 @@ export const PostersCarousel = () => {
                         transform: translateX(0);
                     }
                     100% {
-                        transform: translateX(-${(logos.length * 300)}px);
+                       transform: translateX(-50%);
                     }
                 }
 
                 .animate-scroll {
-                    animation: scroll 20s linear infinite;
+                    animation: scroll 10s linear infinite;
                 }
 
                 /* Masquer les barres de défilement */

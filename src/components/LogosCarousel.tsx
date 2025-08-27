@@ -64,11 +64,12 @@ export const LogoCarousel = () => {
         <div className="w-full h-full overflow-hidden flex items-center bg-background/80 py-4 md:py-8 lg:py-12">
             <div
                 ref={containerRef}
-                className="flex animate-scroll overflow-x-auto scrollbar-hide cursor-grab select-none"
+                className="flex animate-scroll scrollbar-hide cursor-grab select-none"
                 style={{
                     minWidth: "200%",
                     scrollbarWidth: "none",
-                    msOverflowStyle: "none"
+                    msOverflowStyle: "none",
+                    width: "max-content"
                 }}
                 onMouseDown={handleMouseDown}
                 onMouseMove={handleMouseMove}
@@ -94,7 +95,7 @@ export const LogoCarousel = () => {
                         transform: translateX(0);
                     }
                     100% {
-                        transform: translateX(-${(logos.length * 300)}px);
+                       transform: translateX(-50%);
                     }
                 }
 
