@@ -25,6 +25,7 @@ const getNavigationItems = (t: (key: string) => string) => [
   { href: '/reseller', label: t('nav.reseller') },
   { href: '/faq', label: t('nav.faq') },
   { href: '/contact', label: t('nav.contact') },
+  { href: '/installation', label: t('nav.installation') },
 ];
 
 export const Header = () => {

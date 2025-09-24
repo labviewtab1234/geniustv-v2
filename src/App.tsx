@@ -13,6 +13,7 @@ import Apps from "./pages/Apps";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import BlogPost from "./pages/BlogPost";
+import Installation from "./pages/Installation";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfServices";
 import { useEffect } from "react";
@@ -50,6 +51,7 @@ const AppContent = () =>  {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/installation" element={<Installation />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

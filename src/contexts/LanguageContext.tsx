@@ -29,7 +29,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.reseller': 'Reseller',
     'nav.contact': 'Contact',
     'header.startNow': 'Start Now',
-
+    'nav.installation': 'Installation',
     // Hero Section
     'hero.title': 'Stable, fast, and uninterrupted streaming.',
     'hero.subtitle': 'Thousands of live channels and on-demand content. Works on Smart TV, PC, and mobile. Get access in minutes.',
