@@ -14,19 +14,19 @@ const Reseller = () => {
   const resellerPacks = [
     {
       credits: 120,
-      price: "$150",
+      price: "$280",
       popular: false,
       savings: "Save 15%"
     },
     {
       credits: 240,
-      price: "$250",
+      price: "$450",
       popular: true,
       savings: "Save 25%"
     },
     {
       credits: 360,
-      price: "$320",
+      price: "$650",
       popular: false,
       savings: "Save 35%"
     }
